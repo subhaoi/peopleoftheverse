@@ -1,0 +1,200 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>People of the Verse: Fundraisers</title>
+<meta name="theme-color" content="#289F88">
+<link rel="icon" href="assets/img/logo.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Anton&family=Abril+Fatface&family=Special+Elite&family=Bungee&family=Permanent+Marker&family=Caveat:wght@700&family=Figtree:wght@400;500;600;700&family=Bricolage+Grotesque:opsz,wght@12..96,400..800&family=DM+Mono:wght@400;500&family=Yatra+One&family=Teko:wght@500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="assets/css/site.css">
+<style>
+/* desktop layout (from the desktop design) */
+.view-d a{text-decoration:none;color:inherit}
+.view-d .an{font-family:'Anton',sans-serif;font-weight:400}
+.view-d .ab{font-family:'Abril Fatface',serif;font-weight:400}
+.view-d .se{font-family:'Special Elite',monospace}
+.view-d .bu{font-family:'Bungee',sans-serif}
+.view-d .pm{font-family:'Permanent Marker',cursive}
+.view-d .cv{font-family:'Caveat',cursive;font-weight:700}
+.view-d .br{font-family:'Bricolage Grotesque',sans-serif}
+.view-d .y{font-family:'Yatra One',serif;font-weight:400}
+.view-d .t{font-family:'Teko',sans-serif;text-transform:uppercase;letter-spacing:.06em}
+.view-d .dy{display:inline-block;background:var(--deep);color:var(--paper);border-radius:4px;padding:8px 16px;font-family:'Bungee',sans-serif;font-size:15px;letter-spacing:.08em;text-shadow:-1px -1px 0 rgba(0,0,0,.35),1px 1px 0 rgba(255,255,255,.2)}
+.view-d .dy.on{background:var(--teal);color:var(--deep);text-shadow:none}
+.view-d .g3{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:44px 32px}
+.view-d .btn{transition:transform .12s,box-shadow .12s;cursor:pointer}
+.view-d .btn:hover{transform:translate(3px,3px);box-shadow:1px 1px 0 var(--deep)!important}
+.view-d .btn:focus-visible,.view-d button:focus-visible,.view-d a:focus-visible{outline:3px solid var(--deep);outline-offset:3px}
+.view-d .tape{clip-path:polygon(0 0,3% 12%,0 25%,3% 38%,0 50%,3% 62%,0 75%,3% 88%,0 100%,100% 100%,97% 88%,100% 75%,97% 62%,100% 50%,97% 38%,100% 25%,97% 12%,100% 0)}
+.view-d .torn-t{clip-path:polygon(0 14px,3% 4px,7% 12px,11% 2px,16% 11px,21% 0,26% 10px,31% 3px,36% 13px,41% 2px,46% 10px,52% 0,57% 12px,62% 3px,67% 11px,72% 1px,77% 13px,82% 4px,87% 11px,92% 0,96% 10px,100% 3px,100% 100%,0 100%)}
+@media(prefers-reduced-motion:reduce){.view-d .btn{transition:none}}
+@media(max-width:1000px){.view-d .g3{grid-template-columns:repeat(2,minmax(0,1fr))}}
+@media(max-width:600px){.view-d .g3{grid-template-columns:minmax(0,1fr)}}
+/* mobile layout (from the mobile design) */
+.view-m a{text-decoration:none;color:inherit}
+.view-m .an{font-family:'Anton',sans-serif;font-weight:400}
+.view-m .ab{font-family:'Abril Fatface',serif;font-weight:400}
+.view-m .se{font-family:'Special Elite',monospace}
+.view-m .bu{font-family:'Bungee',sans-serif}
+.view-m .pm{font-family:'Permanent Marker',cursive}
+.view-m .cv{font-family:'Caveat',cursive;font-weight:700}
+.view-m .br{font-family:'Bricolage Grotesque',sans-serif}
+.view-m .dm{font-family:'DM Mono',monospace}
+.view-m .y{font-family:'Yatra One',serif;font-weight:400}
+.view-m .t{font-family:'Teko',sans-serif;text-transform:uppercase;letter-spacing:.06em}
+.view-m .dy{display:block;background:var(--deep);color:var(--paper);border-radius:4px;padding:12px 16px;font-family:'Bungee',sans-serif;font-size:15px;letter-spacing:.08em;text-shadow:-1px -1px 0 rgba(0,0,0,.35),1px 1px 0 rgba(255,255,255,.2)}
+.view-m .dy.on{background:var(--teal);color:var(--deep);text-shadow:none}
+.view-m .btn{transition:transform .12s,box-shadow .12s;cursor:pointer}
+.view-m .btn:hover{transform:translate(3px,3px);box-shadow:1px 1px 0 var(--deep)!important}
+.view-m .btn:focus-visible,.view-m input:focus-visible,.view-m button:focus-visible,.view-m a:focus-visible{outline:3px solid var(--deep);outline-offset:3px}
+.view-m .tape{clip-path:polygon(0 0,3% 12%,0 25%,3% 38%,0 50%,3% 62%,0 75%,3% 88%,0 100%,100% 100%,97% 88%,100% 75%,97% 62%,100% 50%,97% 38%,100% 25%,97% 12%,100% 0)}
+.view-m .torn-t{clip-path:polygon(0 14px,3% 4px,7% 12px,11% 2px,16% 11px,21% 0,26% 10px,31% 3px,36% 13px,41% 2px,46% 10px,52% 0,57% 12px,62% 3px,67% 11px,72% 1px,77% 13px,82% 4px,87% 11px,92% 0,96% 10px,100% 3px,100% 100%,0 100%)}
+@keyframes tick{from{transform:translateX(0)}to{transform:translateX(-50%)}}
+.view-m .ticker{animation:tick 30s linear infinite}
+@keyframes drop{from{transform:translateY(-46px);opacity:0}to{transform:translateY(0);opacity:1}}
+.view-m .drop{animation:drop .5s ease-out both}
+@media(prefers-reduced-motion:reduce){.view-m .ticker,.view-m .drop{animation:none}
+.view-m .btn{transition:none}}
+</style>
+</head>
+<body data-page="fund">
+<div class="view-d">
+<div id="top" style="width:100%;overflow:hidden;color:var(--deep);font-family:'Figtree',sans-serif;background-color:var(--paper);background-image:linear-gradient(color-mix(in srgb, var(--teal) 16%, transparent) 1px,transparent 1px),linear-gradient(90deg,color-mix(in srgb, var(--teal) 16%, transparent) 1px,transparent 1px);background-size:28px 28px">
+
+<header style="padding:28px clamp(20px,4vw,56px) 0">
+<div style="display:flex;flex-wrap:wrap;align-items:center;justify-content:space-between;gap:20px 28px">
+<a href="index.html" style="position:relative;display:flex;align-items:center;gap:16px;transform:rotate(-1.5deg)">
+<span aria-hidden="true" class="tape" style="position:absolute;left:-14px;top:-10px;width:56px;height:20px;background:color-mix(in srgb, var(--yellow) 85%, transparent);transform:rotate(-30deg);z-index:2"></span>
+<img src="assets/img/logo.png" alt="People of the Verse logo" style="width:76px;height:76px;object-fit:cover;border:6px solid #fff;box-shadow:3px 4px 0 color-mix(in srgb, var(--deep) 35%, transparent)">
+<span class="an" style="font-size:34px;letter-spacing:.02em;text-transform:uppercase;line-height:1">People of the Verse</span>
+</a>
+<nav style="display:flex;flex-wrap:wrap;align-items:center;gap:12px">
+<a href="events.html" class="dy" style="transform:rotate(-1deg)">EVENTS</a>
+<a href="fundraisers.html" class="dy on" style="transform:rotate(1deg)">FUNDRAISERS</a>
+<a href="mag.html" class="dy" style="transform:rotate(-.6deg)">POV MAG</a>
+<a href="team.html" class="dy" style="transform:rotate(1.2deg)">TEAM</a>
+<a href="magnets.html" class="dy" style="transform:rotate(-1deg)">WORD MAGNETS</a>
+<a href="perform.html" class="bu btn" style="background:var(--yellow);color:var(--deep);border:3px solid var(--deep);border-radius:4px;padding:8px 18px;font-size:15px;letter-spacing:.08em;box-shadow:4px 4px 0 var(--deep);transform:rotate(-1.5deg)">PERFORM AT POV</a>
+</nav>
+</div>
+</header>
+
+<section style="padding:72px clamp(20px,4vw,56px) 96px;display:flex;flex-wrap:wrap;gap:56px;align-items:center">
+<div style="flex:1 1 440px;min-width:0">
+<div class="se" style="display:inline-block;background:var(--yellow);border:2px solid var(--deep);padding:6px 14px;font-size:15px;letter-spacing:.08em;text-transform:uppercase;transform:rotate(1.5deg)">Fundraiser shows</div>
+<h1 class="an" style="margin:20px 0 20px;font-size:clamp(56px,8.4vw,128px);line-height:.92;text-transform:uppercase">Poetry for <span style="background:linear-gradient(transparent 55%,var(--yellow) 55% 92%,transparent 92%)">a cause.</span></h1>
+<p style="margin:0 0 28px;max-width:480px;font-size:21px;line-height:1.55;font-weight:500">You can donate to the beneficiaries of our past fundraiser shows. Here is who they are.</p>
+<div style="display:flex;flex-wrap:wrap;gap:16px 28px;align-items:center"><a href="#latest" class="bu btn" style="display:inline-block;background:var(--yellow);border:3px solid var(--deep);padding:12px 22px;font-size:16px;letter-spacing:.06em;box-shadow:4px 4px 0 var(--deep)">DONATE NOW →</a><a href="#past" class="pm" style="font-size:24px;border-bottom:4px solid var(--teal);padding:4px 0">past fundraisers ↓</a></div>
+</div>
+<div style="flex:1 1 360px;min-width:0;display:flex;justify-content:center">
+<div style="position:relative;width:min(100%,380px);aspect-ratio:1 / 1;display:flex;align-items:center;justify-content:center;transform:rotate(-6deg)">
+<span aria-hidden="true" style="position:absolute;inset:0;border-radius:50%;background:var(--yellow);border:4px solid var(--deep);box-shadow:8px 8px 0 var(--deep)"></span>
+<span aria-hidden="true" style="position:absolute;inset:14px;border-radius:50%;border:3px dashed var(--deep)"></span>
+<div style="position:relative;text-align:center;padding:0 40px"><div class="bu" style="font-size:14px;letter-spacing:.14em">SO FAR</div><div class="an" style="font-size:clamp(54px,7vw,84px);line-height:1">₹<span data-p="fund.total">[TOTAL]</span></div><div class="cv" style="font-size:28px;line-height:1.05">raised across <span data-p="fund.count">[N]</span> fundraiser shows</div></div>
+</div>
+</div>
+</section>
+
+<section id="latest" style="padding:96px clamp(20px,4vw,56px);background:var(--teal);border-top:3px solid var(--deep);border-bottom:3px solid var(--deep);background-image:radial-gradient(color-mix(in srgb, var(--deep) 22%, transparent) 2px,transparent 2px);background-size:22px 22px">
+<div style="display:flex;flex-wrap:wrap;gap:48px 64px;align-items:center">
+<div style="flex:1 1 360px;min-width:0">
+<div class="cv" style="display:inline-block;font-size:30px;line-height:1;color:var(--deep);transform:rotate(-2deg)">the latest show</div>
+<h2 class="an" style="margin:6px 0 16px;font-size:clamp(44px,5.6vw,80px);line-height:.95;text-transform:uppercase;color:var(--paper);text-shadow:4px 4px 0 var(--deep)">Latest beneficiary</h2>
+<p style="margin:0;max-width:380px;font-size:19px;line-height:1.55;font-weight:600;background:var(--paper);border:2px solid var(--deep);padding:12px 16px;transform:rotate(1deg);box-shadow:4px 4px 0 var(--deep)"><span data-p="fund.why">[A SHORT NOTE ON WHY THIS CAUSE WAS CHOSEN FOR THE SHOW]</span></p>
+</div>
+<div style="flex:1 1 480px;min-width:0;max-width:640px;transform:rotate(-1.2deg)">
+<div style="background:var(--yellow);border:3px dashed var(--deep);padding:32px 32px 28px;box-shadow:8px 8px 0 var(--deep)">
+<div style="display:flex;align-items:center;gap:10px;margin-bottom:16px"><svg width="34" height="34" viewBox="0 0 34 34" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" aria-hidden="true"><circle cx="8" cy="8" r="5"/><circle cx="8" cy="26" r="5"/><path d="M12 11 L31 26 M12 23 L31 8"/></svg><span aria-hidden="true" style="flex:1;border-bottom:3px dashed var(--deep)"></span><span class="bu" style="font-size:13px;letter-spacing:.1em">CUT HERE</span></div>
+<div class="bu" style="font-size:14px;letter-spacing:.14em">BENEFICIARY</div>
+<div class="an" style="margin:6px 0 8px;font-size:clamp(38px,4.6vw,60px);line-height:1;text-transform:uppercase"><span data-p="fund.latest.name">[BENEFICIARY NAME]</span></div>
+<p style="margin:0 0 18px;font-size:18px;line-height:1.55"><span data-p="fund.latest.blurb">[ONE LINE ON WHO THEY ARE AND WHAT THE SHOW SUPPORTED]</span></p>
+<div style="border-top:3px dashed var(--deep);padding-top:16px;display:flex;flex-wrap:wrap;align-items:center;justify-content:space-between;gap:14px 24px">
+<div><div class="se" style="font-size:14px;letter-spacing:.08em">RAISED AT <span data-p="fund.latest.event">[EVENT NAME]</span></div><div class="an" style="font-size:48px;line-height:1">₹<span data-p="fund.latest.amount">[AMOUNT]</span></div></div>
+<a href="#" data-href="fund.latest.donate" class="bu btn" style="background:var(--deep);color:var(--yellow);border:3px solid var(--deep);padding:12px 22px;font-size:17px;letter-spacing:.06em;box-shadow:4px 4px 0 var(--teal)">DONATE →</a>
+</div>
+</div>
+</div>
+</div>
+</section>
+
+<section id="past" style="padding:104px clamp(20px,4vw,56px) 88px">
+<div style="display:flex;flex-wrap:wrap;align-items:flex-end;justify-content:space-between;gap:16px 32px;margin-bottom:56px">
+<h2 class="an" style="margin:0;font-size:clamp(44px,6.4vw,92px);line-height:.95;text-transform:uppercase">Past fundraisers</h2>
+<p style="margin:0;max-width:380px;font-size:19px;line-height:1.55">Every beneficiary from our fundraiser shows, with a link to give directly.</p>
+</div>
+<div class="g3">
+<div style="background:var(--yellow);border:3px dashed var(--deep);padding:24px;box-shadow:6px 6px 0 var(--deep);transform:rotate(-1.5deg)"><div class="bu" style="font-size:12px;letter-spacing:.14em"><span data-p="fund.past.0.month">[MONTH YEAR]</span></div><div class="an" style="margin:6px 0 8px;font-size:34px;line-height:1;text-transform:uppercase"><span data-p="fund.past.0.name">[BENEFICIARY NAME]</span></div><p style="margin:0 0 16px;font-size:16px;line-height:1.5"><span data-p="fund.past.0.blurb">[ONE LINE ON THE CAUSE]</span></p><div style="border-top:3px dashed var(--deep);padding-top:12px;display:flex;align-items:center;justify-content:space-between;gap:12px"><span class="an" style="font-size:30px">₹<span data-p="fund.past.0.amount">[AMOUNT]</span></span><a href="#" data-href="fund.past.0.donate" class="bu btn" style="background:var(--deep);color:var(--yellow);padding:9px 16px;font-size:14px;letter-spacing:.06em;box-shadow:3px 3px 0 var(--teal)">DONATE →</a></div></div>
+<div style="background:#fff;border:3px dashed var(--deep);padding:24px;box-shadow:6px 6px 0 var(--deep);transform:rotate(1.2deg) translateY(12px)"><div class="bu" style="font-size:12px;letter-spacing:.14em"><span data-p="fund.past.1.month">[MONTH YEAR]</span></div><div class="an" style="margin:6px 0 8px;font-size:34px;line-height:1;text-transform:uppercase"><span data-p="fund.past.1.name">[BENEFICIARY NAME]</span></div><p style="margin:0 0 16px;font-size:16px;line-height:1.5"><span data-p="fund.past.1.blurb">[ONE LINE ON THE CAUSE]</span></p><div style="border-top:3px dashed var(--deep);padding-top:12px;display:flex;align-items:center;justify-content:space-between;gap:12px"><span class="an" style="font-size:30px">₹<span data-p="fund.past.1.amount">[AMOUNT]</span></span><a href="#" data-href="fund.past.1.donate" class="bu btn" style="background:var(--deep);color:var(--yellow);padding:9px 16px;font-size:14px;letter-spacing:.06em;box-shadow:3px 3px 0 var(--teal)">DONATE →</a></div></div>
+<div style="background:var(--mist);border:3px dashed var(--deep);padding:24px;box-shadow:6px 6px 0 var(--deep);transform:rotate(-.8deg)"><div class="bu" style="font-size:12px;letter-spacing:.14em"><span data-p="fund.past.2.month">[MONTH YEAR]</span></div><div class="an" style="margin:6px 0 8px;font-size:34px;line-height:1;text-transform:uppercase"><span data-p="fund.past.2.name">[BENEFICIARY NAME]</span></div><p style="margin:0 0 16px;font-size:16px;line-height:1.5"><span data-p="fund.past.2.blurb">[ONE LINE ON THE CAUSE]</span></p><div style="border-top:3px dashed var(--deep);padding-top:12px;display:flex;align-items:center;justify-content:space-between;gap:12px"><span class="an" style="font-size:30px">₹<span data-p="fund.past.2.amount">[AMOUNT]</span></span><a href="#" data-href="fund.past.2.donate" class="bu btn" style="background:var(--deep);color:var(--yellow);padding:9px 16px;font-size:14px;letter-spacing:.06em;box-shadow:3px 3px 0 var(--teal)">DONATE →</a></div></div>
+<div style="background:#fff;border:3px dashed var(--deep);padding:24px;box-shadow:6px 6px 0 var(--deep);transform:rotate(1.4deg)"><div class="bu" style="font-size:12px;letter-spacing:.14em"><span data-p="fund.past.3.month">[MONTH YEAR]</span></div><div class="an" style="margin:6px 0 8px;font-size:34px;line-height:1;text-transform:uppercase"><span data-p="fund.past.3.name">[BENEFICIARY NAME]</span></div><p style="margin:0 0 16px;font-size:16px;line-height:1.5"><span data-p="fund.past.3.blurb">[ONE LINE ON THE CAUSE]</span></p><div style="border-top:3px dashed var(--deep);padding-top:12px;display:flex;align-items:center;justify-content:space-between;gap:12px"><span class="an" style="font-size:30px">₹<span data-p="fund.past.3.amount">[AMOUNT]</span></span><a href="#" data-href="fund.past.3.donate" class="bu btn" style="background:var(--deep);color:var(--yellow);padding:9px 16px;font-size:14px;letter-spacing:.06em;box-shadow:3px 3px 0 var(--teal)">DONATE →</a></div></div>
+<div style="background:var(--yellow);border:3px dashed var(--deep);padding:24px;box-shadow:6px 6px 0 var(--deep);transform:rotate(-1.2deg) translateY(10px)"><div class="bu" style="font-size:12px;letter-spacing:.14em"><span data-p="fund.past.4.month">[MONTH YEAR]</span></div><div class="an" style="margin:6px 0 8px;font-size:34px;line-height:1;text-transform:uppercase"><span data-p="fund.past.4.name">[BENEFICIARY NAME]</span></div><p style="margin:0 0 16px;font-size:16px;line-height:1.5"><span data-p="fund.past.4.blurb">[ONE LINE ON THE CAUSE]</span></p><div style="border-top:3px dashed var(--deep);padding-top:12px;display:flex;align-items:center;justify-content:space-between;gap:12px"><span class="an" style="font-size:30px">₹<span data-p="fund.past.4.amount">[AMOUNT]</span></span><a href="#" data-href="fund.past.4.donate" class="bu btn" style="background:var(--deep);color:var(--yellow);padding:9px 16px;font-size:14px;letter-spacing:.06em;box-shadow:3px 3px 0 var(--teal)">DONATE →</a></div></div>
+<div style="background:var(--mist);border:3px dashed var(--deep);padding:24px;box-shadow:6px 6px 0 var(--deep);transform:rotate(.8deg)"><div class="bu" style="font-size:12px;letter-spacing:.14em"><span data-p="fund.past.5.month">[MONTH YEAR]</span></div><div class="an" style="margin:6px 0 8px;font-size:34px;line-height:1;text-transform:uppercase"><span data-p="fund.past.5.name">[BENEFICIARY NAME]</span></div><p style="margin:0 0 16px;font-size:16px;line-height:1.5"><span data-p="fund.past.5.blurb">[ONE LINE ON THE CAUSE]</span></p><div style="border-top:3px dashed var(--deep);padding-top:12px;display:flex;align-items:center;justify-content:space-between;gap:12px"><span class="an" style="font-size:30px">₹<span data-p="fund.past.5.amount">[AMOUNT]</span></span><a href="#" data-href="fund.past.5.donate" class="bu btn" style="background:var(--deep);color:var(--yellow);padding:9px 16px;font-size:14px;letter-spacing:.06em;box-shadow:3px 3px 0 var(--teal)">DONATE →</a></div></div>
+</div>
+</section>
+
+<section style="padding:88px clamp(20px,4vw,56px) 112px;background:var(--mist);border-top:3px solid var(--deep);border-bottom:3px solid var(--deep)">
+<div class="cv" style="display:inline-block;font-size:30px;line-height:1;color:var(--dark);transform:rotate(-2deg)">before you give</div>
+<h2 class="an" style="margin:6px 0 40px;font-size:clamp(44px,5.6vw,80px);line-height:.95;text-transform:uppercase">How it works</h2>
+<div class="g3">
+<div style="position:relative;background-color:#fff;background-image:repeating-linear-gradient(transparent 0 31px,color-mix(in srgb, var(--teal) 55%, transparent) 31px 32px);border:2px solid var(--deep);box-shadow:6px 6px 0 var(--deep);padding:46px 24px 26px;transform:rotate(-1.5deg)"><span aria-hidden="true" style="position:absolute;left:50%;top:-12px;margin-left:-13px;width:26px;height:26px;border-radius:50%;background:var(--yellow);border:3px solid var(--deep)"></span><div class="an" style="font-size:28px;line-height:1.05;text-transform:uppercase">How we choose a cause</div><div class="cv" style="margin-top:8px;font-size:25px;line-height:32px"><span data-p="fund.how.choose">[HOW A BENEFICIARY IS CHOSEN FOR EACH SHOW]</span></div></div>
+<div style="position:relative;background-color:var(--paper);background-image:repeating-linear-gradient(transparent 0 31px,color-mix(in srgb, var(--teal) 55%, transparent) 31px 32px);border:2px solid var(--deep);box-shadow:6px 6px 0 var(--deep);padding:46px 24px 26px;transform:rotate(1deg) translateY(10px)"><span aria-hidden="true" style="position:absolute;left:50%;top:-12px;margin-left:-13px;width:26px;height:26px;border-radius:50%;background:var(--yellow);border:3px solid var(--deep)"></span><div class="an" style="font-size:28px;line-height:1.05;text-transform:uppercase">Where your money goes</div><div class="cv" style="margin-top:8px;font-size:25px;line-height:32px"><span data-p="fund.how.money">[HOW DONATIONS REACH THE BENEFICIARY]</span></div></div>
+<div style="position:relative;background-color:#fff;background-image:repeating-linear-gradient(transparent 0 31px,color-mix(in srgb, var(--teal) 55%, transparent) 31px 32px);border:2px solid var(--deep);box-shadow:6px 6px 0 var(--deep);padding:46px 24px 26px;transform:rotate(-.8deg)"><span aria-hidden="true" style="position:absolute;left:50%;top:-12px;margin-left:-13px;width:26px;height:26px;border-radius:50%;background:var(--yellow);border:3px solid var(--deep)"></span><div class="an" style="font-size:28px;line-height:1.05;text-transform:uppercase">What we share</div><div class="cv" style="margin-top:8px;font-size:25px;line-height:32px"><span data-p="fund.how.share">[WHERE THE AMOUNTS RAISED ARE PUBLISHED]</span></div></div>
+</div>
+</section>
+
+<footer class="torn-t" style="margin-top:-12px;background:var(--deep);color:var(--paper);padding:112px clamp(20px,4vw,56px) 48px">
+<h2 class="an" style="margin:0;max-width:1100px;font-size:clamp(40px,6.4vw,92px);line-height:1;text-transform:uppercase;color:var(--yellow)">Show up for others and we show up for you.</h2>
+<p style="margin:28px 0 0;max-width:640px;font-size:21px;line-height:1.6">Let&rsquo;s build this community together, not just as performers, but also as listeners. See you at our next event! Happy poetry to you!</p>
+<div style="margin-top:44px;display:flex;flex-wrap:wrap;align-items:center;justify-content:space-between;gap:28px 40px">
+<div class="pm" style="font-size:34px;line-height:1.25;transform:rotate(-2deg)"><span style="color:var(--yellow)">Feel it. Like it. Share it.</span><br>Because poetry belongs to everyone.</div>
+<div style="position:relative;display:flex;align-items:center;gap:18px;background:var(--paper);color:var(--deep);padding:22px 22px 16px;transform:rotate(2deg);box-shadow:5px 5px 0 var(--teal)"><span aria-hidden="true" class="tape" style="position:absolute;left:50%;top:-12px;width:70px;height:22px;margin-left:-35px;background:color-mix(in srgb, var(--yellow) 90%, transparent);transform:rotate(-4deg)"></span><span class="an" style="flex:none;width:80px;height:80px;border:3px solid var(--deep);display:flex;align-items:center;justify-content:center;font-size:24px">QR</span><span style="font-size:16px;line-height:1.45"><strong style="font-size:19px">Been to a reading?</strong><br>Scan to share feedback or a testimonial.</span></div>
+</div>
+<div class="se" style="margin-top:48px;display:flex;flex-wrap:wrap;align-items:center;gap:10px 28px;font-size:16px;letter-spacing:.06em;text-transform:uppercase;color:var(--yellow)"><a href="events.html" style="padding:8px 0">Events</a><a href="fundraisers.html" style="padding:8px 0">Fundraisers</a><a href="mag.html" style="padding:8px 0">PoV Mag</a><a href="team.html" style="padding:8px 0">Team</a><a href="magnets.html" style="padding:8px 0">Word magnets</a><a href="perform.html" style="padding:8px 0">Perform at PoV</a><a href="https://www.instagram.com/people_of_the_verse/" style="padding:8px 0">Instagram ↗</a><a href="#" data-href="links.youtube" style="padding:8px 0">YouTube <span data-yt>[link soon]</span></a></div>
+<div style="margin-top:20px;display:flex;align-items:center;gap:12px;color:var(--paper)" class="se"><img src="assets/img/logo.png" alt="" style="width:44px;height:44px;object-fit:cover;border:3px solid #fff">People of the Verse · Bangalore</div>
+</footer>
+
+</div>
+</div>
+<div class="view-m">
+<div id="top-m" style="width:100%;overflow:hidden;color:var(--deep);font-family:'Figtree',sans-serif;background-color:var(--paper);background-image:linear-gradient(color-mix(in srgb, var(--teal) 16%, transparent) 1px,transparent 1px),linear-gradient(90deg,color-mix(in srgb, var(--teal) 16%, transparent) 1px,transparent 1px);background-size:28px 28px">
+<header style="padding:18px 20px 0">
+<div style="display:flex;align-items:center;justify-content:space-between;gap:12px">
+<a href="index.html" style="position:relative;display:flex;align-items:center;gap:12px;transform:rotate(-1.5deg)">
+<span aria-hidden="true" class="tape" style="position:absolute;left:-10px;top:-8px;width:40px;height:16px;background:color-mix(in srgb, var(--yellow) 85%, transparent);transform:rotate(-30deg);z-index:2"></span>
+<img src="assets/img/logo.png" alt="People of the Verse logo" style="width:56px;height:56px;object-fit:cover;border:4px solid #fff;box-shadow:2px 3px 0 color-mix(in srgb, var(--deep) 35%, transparent)">
+<span class="an" style="font-size:22px;letter-spacing:.02em;text-transform:uppercase;line-height:1">People of<br>the Verse</span>
+</a>
+<button type="button" data-act="menu" aria-expanded="false" class="bu btn" style="min-height:48px;min-width:96px;background:var(--deep);color:var(--paper);border:0;border-radius:4px;padding:0 16px;font-size:14px;letter-spacing:.08em;text-shadow:-1px -1px 0 rgba(0,0,0,.35),1px 1px 0 rgba(255,255,255,.2)">MENU</button>
+</div>
+<div data-if="menuOpen" style="display:contents" hidden>
+<nav style="display:flex;flex-direction:column;gap:10px;padding:16px 0 4px">
+<a href="events.html" class="dy">EVENTS</a>
+<a href="fundraisers.html" class="dy on">FUNDRAISERS</a>
+<a href="mag.html" class="dy">POV MAG</a>
+<a href="team.html" class="dy">TEAM</a>
+<a href="magnets.html" class="dy">WORD MAGNETS</a>
+<a href="perform.html" class="bu btn" style="display:block;text-align:center;background:var(--yellow);color:var(--deep);border:3px solid var(--deep);border-radius:4px;padding:12px 18px;font-size:15px;letter-spacing:.08em;box-shadow:4px 4px 0 var(--deep)">PERFORM AT POV</a>
+</nav>
+</div>
+</header>
+<section style="padding:36px 20px 56px"><div class="se" style="display:inline-block;background:var(--yellow);border:2px solid var(--deep);padding:6px 12px;font-size:13px;letter-spacing:.08em;text-transform:uppercase;transform:rotate(1.5deg)">Fundraiser shows</div><h1 class="an" style="margin:18px 0 16px;font-size:72px;line-height:.92;text-transform:uppercase">Poetry for <span style="background:linear-gradient(transparent 55%,var(--yellow) 55% 92%,transparent 92%)">a cause.</span></h1><p style="margin:0 0 24px;font-size:19px;line-height:1.5;font-weight:500">You can donate to the beneficiaries of our past fundraiser shows. Here is who they are.</p><div style="display:flex;flex-direction:column;align-items:flex-start;gap:6px"><a href="#latest-m" class="bu btn" style="display:inline-block;background:var(--yellow);border:3px solid var(--deep);padding:14px 22px;font-size:15px;letter-spacing:.06em;box-shadow:4px 4px 0 var(--deep)">DONATE NOW →</a><a href="#past-m" class="pm" style="font-size:22px;border-bottom:3px solid var(--teal);padding:12px 0 4px;margin-top:10px">past fundraisers ↓</a></div><div style="position:relative;width:268px;height:268px;margin:44px auto 0;display:flex;align-items:center;justify-content:center;transform:rotate(-6deg)"><span aria-hidden="true" style="position:absolute;inset:0;border-radius:50%;background:var(--yellow);border:4px solid var(--deep);box-shadow:6px 6px 0 var(--deep)"></span><span aria-hidden="true" style="position:absolute;inset:12px;border-radius:50%;border:3px dashed var(--deep)"></span><div style="position:relative;text-align:center;padding:0 34px"><div class="bu" style="font-size:12px;letter-spacing:.14em">SO FAR</div><div class="an" style="font-size:56px;line-height:1">₹<span data-p="fund.total">[TOTAL]</span></div><div class="cv" style="font-size:24px;line-height:1.05">raised across <span data-p="fund.count">[N]</span> fundraiser shows</div></div></div></section>
+<section id="latest-m" style="padding:56px 20px 64px;background:var(--teal);border-top:3px solid var(--deep);border-bottom:3px solid var(--deep);background-image:radial-gradient(color-mix(in srgb, var(--deep) 22%, transparent) 2px,transparent 2px);background-size:22px 22px"><div class="cv" style="display:inline-block;font-size:26px;line-height:1;color:var(--deep);transform:rotate(-2deg)">the latest show</div><h2 class="an" style="margin:6px 0 18px;font-size:52px;line-height:.95;text-transform:uppercase;color:var(--paper);text-shadow:3px 3px 0 var(--deep)">Latest beneficiary</h2><p style="margin:0 0 32px;font-size:17px;line-height:1.5;font-weight:600;background:var(--paper);border:2px solid var(--deep);padding:12px 16px;transform:rotate(1deg);box-shadow:4px 4px 0 var(--deep)"><span data-p="fund.why">[A SHORT NOTE ON WHY THIS CAUSE WAS CHOSEN FOR THE SHOW]</span></p><div style="background:var(--yellow);border:3px dashed var(--deep);padding:22px 20px 20px;box-shadow:6px 6px 0 var(--deep);transform:rotate(-1.2deg)"><div class="bu" style="font-size:12px;letter-spacing:.14em">LATEST BENEFICIARY</div><div class="an" style="margin:4px 0 6px;font-size:36px;line-height:1;text-transform:uppercase"><span data-p="fund.latest.name">[BENEFICIARY NAME]</span></div><p style="margin:0 0 14px;font-size:16px;line-height:1.5"><span data-p="fund.latest.blurb">[ONE LINE ON WHO THEY ARE AND WHAT THE SHOW SUPPORTED]</span></p><div style="border-top:3px dashed var(--deep);padding-top:14px"><div class="se" style="font-size:12px;letter-spacing:.08em">RAISED AT <span data-p="fund.latest.event">[EVENT NAME]</span></div><div class="an" style="font-size:40px;line-height:1">₹<span data-p="fund.latest.amount">[AMOUNT]</span></div><a href="#" data-href="fund.latest.donate" class="bu btn" style="display:block;margin-top:14px;text-align:center;background:var(--deep);color:var(--yellow);border:3px solid var(--deep);padding:14px 18px;font-size:16px;letter-spacing:.06em;box-shadow:4px 4px 0 var(--teal)">DONATE →</a></div></div></section>
+<section id="past-m" style="padding:56px 20px 64px"><h2 class="an" style="margin:0 0 12px;font-size:48px;line-height:.95;text-transform:uppercase">Past fundraisers</h2><p style="margin:0 0 36px;font-size:18px;line-height:1.5">Every beneficiary from our fundraiser shows, with a link to give directly.</p><div style="display:flex;flex-direction:column;gap:32px"><div style="background:#fff;border:3px dashed var(--deep);padding:22px 20px 20px;box-shadow:6px 6px 0 var(--deep);transform:rotate(1.2deg)"><div class="bu" style="font-size:12px;letter-spacing:.14em"><span data-p="fund.past.0.month">[MONTH YEAR]</span></div><div class="an" style="margin:6px 0 8px;font-size:34px;line-height:1;text-transform:uppercase"><span data-p="fund.past.0.name">[BENEFICIARY NAME]</span></div><p style="margin:0 0 16px;font-size:16px;line-height:1.5"><span data-p="fund.past.0.blurb">[ONE LINE ON THE CAUSE]</span></p><div style="border-top:3px dashed var(--deep);padding-top:12px"><div class="se" style="font-size:12px;letter-spacing:.08em">RAISED</div><div class="an" style="font-size:34px;line-height:1">₹<span data-p="fund.past.0.amount">[AMOUNT]</span></div><a href="#" data-href="fund.past.0.donate" class="bu btn" style="display:block;margin-top:12px;text-align:center;background:var(--deep);color:var(--yellow);border:3px solid var(--deep);padding:13px 16px;font-size:15px;letter-spacing:.06em;box-shadow:4px 4px 0 var(--teal)">DONATE →</a></div></div><div style="background:var(--mist);border:3px dashed var(--deep);padding:22px 20px 20px;box-shadow:6px 6px 0 var(--deep);transform:rotate(-.8deg)"><div class="bu" style="font-size:12px;letter-spacing:.14em"><span data-p="fund.past.1.month">[MONTH YEAR]</span></div><div class="an" style="margin:6px 0 8px;font-size:34px;line-height:1;text-transform:uppercase"><span data-p="fund.past.1.name">[BENEFICIARY NAME]</span></div><p style="margin:0 0 16px;font-size:16px;line-height:1.5"><span data-p="fund.past.1.blurb">[ONE LINE ON THE CAUSE]</span></p><div style="border-top:3px dashed var(--deep);padding-top:12px"><div class="se" style="font-size:12px;letter-spacing:.08em">RAISED</div><div class="an" style="font-size:34px;line-height:1">₹<span data-p="fund.past.1.amount">[AMOUNT]</span></div><a href="#" data-href="fund.past.1.donate" class="bu btn" style="display:block;margin-top:12px;text-align:center;background:var(--deep);color:var(--yellow);border:3px solid var(--deep);padding:13px 16px;font-size:15px;letter-spacing:.06em;box-shadow:4px 4px 0 var(--teal)">DONATE →</a></div></div><div style="background:var(--yellow);border:3px dashed var(--deep);padding:22px 20px 20px;box-shadow:6px 6px 0 var(--deep);transform:rotate(1.4deg)"><div class="bu" style="font-size:12px;letter-spacing:.14em"><span data-p="fund.past.2.month">[MONTH YEAR]</span></div><div class="an" style="margin:6px 0 8px;font-size:34px;line-height:1;text-transform:uppercase"><span data-p="fund.past.2.name">[BENEFICIARY NAME]</span></div><p style="margin:0 0 16px;font-size:16px;line-height:1.5"><span data-p="fund.past.2.blurb">[ONE LINE ON THE CAUSE]</span></p><div style="border-top:3px dashed var(--deep);padding-top:12px"><div class="se" style="font-size:12px;letter-spacing:.08em">RAISED</div><div class="an" style="font-size:34px;line-height:1">₹<span data-p="fund.past.2.amount">[AMOUNT]</span></div><a href="#" data-href="fund.past.2.donate" class="bu btn" style="display:block;margin-top:12px;text-align:center;background:var(--deep);color:var(--yellow);border:3px solid var(--deep);padding:13px 16px;font-size:15px;letter-spacing:.06em;box-shadow:4px 4px 0 var(--teal)">DONATE →</a></div></div></div></section>
+<section style="padding:56px 20px 72px;background:var(--mist);border-top:3px solid var(--deep);border-bottom:3px solid var(--deep)"><div class="cv" style="display:inline-block;font-size:26px;line-height:1;color:var(--dark);transform:rotate(-2deg)">before you give</div><h2 class="an" style="margin:6px 0 36px;font-size:48px;line-height:.95;text-transform:uppercase">How it works</h2><div style="display:flex;flex-direction:column;gap:36px"><div style="position:relative;background-color:#fff;background-image:repeating-linear-gradient(transparent 0 31px,color-mix(in srgb, var(--teal) 55%, transparent) 31px 32px);border:2px solid var(--deep);box-shadow:5px 5px 0 var(--deep);padding:42px 20px 22px;transform:rotate(-1.5deg)"><span aria-hidden="true" style="position:absolute;left:50%;top:-12px;margin-left:-13px;width:26px;height:26px;border-radius:50%;background:var(--yellow);border:3px solid var(--deep)"></span><div class="an" style="margin:8px 0 6px;font-size:26px;line-height:1.05;text-transform:uppercase">How we choose a cause</div><div class="cv" style="font-size:24px;line-height:32px"><span data-p="fund.how.choose">[HOW A BENEFICIARY IS CHOSEN FOR EACH SHOW]</span></div></div><div style="position:relative;background-color:var(--paper);background-image:repeating-linear-gradient(transparent 0 31px,color-mix(in srgb, var(--teal) 55%, transparent) 31px 32px);border:2px solid var(--deep);box-shadow:5px 5px 0 var(--deep);padding:42px 20px 22px;transform:rotate(1deg)"><span aria-hidden="true" style="position:absolute;left:50%;top:-12px;margin-left:-13px;width:26px;height:26px;border-radius:50%;background:var(--yellow);border:3px solid var(--deep)"></span><div class="an" style="margin:8px 0 6px;font-size:26px;line-height:1.05;text-transform:uppercase">Where your money goes</div><div class="cv" style="font-size:24px;line-height:32px"><span data-p="fund.how.money">[HOW DONATIONS REACH THE BENEFICIARY]</span></div></div><div style="position:relative;background-color:#fff;background-image:repeating-linear-gradient(transparent 0 31px,color-mix(in srgb, var(--teal) 55%, transparent) 31px 32px);border:2px solid var(--deep);box-shadow:5px 5px 0 var(--deep);padding:42px 20px 22px;transform:rotate(-.8deg)"><span aria-hidden="true" style="position:absolute;left:50%;top:-12px;margin-left:-13px;width:26px;height:26px;border-radius:50%;background:var(--yellow);border:3px solid var(--deep)"></span><div class="an" style="margin:8px 0 6px;font-size:26px;line-height:1.05;text-transform:uppercase">What we share</div><div class="cv" style="font-size:24px;line-height:32px"><span data-p="fund.how.share">[WHERE THE AMOUNTS RAISED ARE PUBLISHED]</span></div></div></div></section>
+<footer class="torn-t" style="margin-top:-10px;background:var(--deep);color:var(--paper);padding:80px 20px 36px">
+<h2 class="an" style="margin:0;font-size:46px;line-height:1;text-transform:uppercase;color:var(--yellow)">Show up for others and we show up for you.</h2>
+<p style="margin:20px 0 0;font-size:18px;line-height:1.6">Let&rsquo;s build this community together, not just as performers, but also as listeners. See you at our next event! Happy poetry to you!</p>
+<div class="pm" style="margin-top:32px;font-size:28px;line-height:1.25;transform:rotate(-2deg)"><span style="color:var(--yellow)">Feel it. Like it. Share it.</span><br>Because poetry belongs to everyone.</div>
+<div style="position:relative;margin-top:36px;display:flex;align-items:center;gap:14px;background:var(--paper);color:var(--deep);padding:20px 16px 14px;transform:rotate(1.5deg);box-shadow:4px 4px 0 var(--teal)"><span aria-hidden="true" class="tape" style="position:absolute;left:50%;top:-10px;width:60px;height:20px;margin-left:-30px;background:color-mix(in srgb, var(--yellow) 90%, transparent);transform:rotate(-4deg)"></span><span class="an" style="flex:none;width:68px;height:68px;border:3px solid var(--deep);display:flex;align-items:center;justify-content:center;font-size:20px">QR</span><span style="font-size:15px;line-height:1.4"><strong style="font-size:17px">Been to a reading?</strong><br>Scan to share feedback or a testimonial.</span></div>
+<div class="se" style="margin-top:36px;display:flex;flex-wrap:wrap;gap:0 22px;font-size:14px;letter-spacing:.06em;text-transform:uppercase;color:var(--yellow)"><a href="events.html" style="padding:12px 0">Events</a><a href="fundraisers.html" style="padding:12px 0">Fundraisers</a><a href="mag.html" style="padding:12px 0">PoV Mag</a><a href="team.html" style="padding:12px 0">Team</a><a href="magnets.html" style="padding:12px 0">Word magnets</a><a href="perform.html" style="padding:12px 0">Perform at PoV</a><a href="https://www.instagram.com/people_of_the_verse/" style="padding:12px 0">Instagram ↗</a><a href="#" data-href="links.youtube" style="padding:12px 0">YouTube <span data-yt>[link soon]</span></a></div>
+<div class="se" style="margin-top:16px;display:flex;align-items:center;gap:10px;font-size:14px"><img src="assets/img/logo.png" alt="" style="width:40px;height:40px;object-fit:cover;border:3px solid #fff">People of the Verse · Bangalore</div>
+</footer>
+</div>
+</div>
+<script src="assets/js/content.js"></script>
+<script src="assets/js/site.js"></script>
+</body>
+</html>

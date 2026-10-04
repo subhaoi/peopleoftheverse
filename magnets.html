@@ -1,0 +1,245 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>People of the Verse: Word magnets</title>
+<meta name="theme-color" content="#289F88">
+<link rel="icon" href="assets/img/logo.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Anton&family=Abril+Fatface&family=Special+Elite&family=Bungee&family=Permanent+Marker&family=Caveat:wght@700&family=Figtree:wght@400;500;600;700&family=Bricolage+Grotesque:opsz,wght@12..96,400..800&family=DM+Mono:wght@400;500&family=Yatra+One&family=Teko:wght@500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="assets/css/site.css">
+<style>
+/* desktop layout (from the desktop design) */
+.view-d a{text-decoration:none;color:inherit}
+.view-d .an{font-family:'Anton',sans-serif;font-weight:400}
+.view-d .ab{font-family:'Abril Fatface',serif;font-weight:400}
+.view-d .se{font-family:'Special Elite',monospace}
+.view-d .bu{font-family:'Bungee',sans-serif}
+.view-d .pm{font-family:'Permanent Marker',cursive}
+.view-d .cv{font-family:'Caveat',cursive;font-weight:700}
+.view-d .y{font-family:'Yatra One',serif;font-weight:400}
+.view-d .t{font-family:'Teko',sans-serif;text-transform:uppercase;letter-spacing:.06em}
+.view-d .dy{display:inline-block;background:var(--deep);color:var(--paper);border-radius:4px;padding:8px 16px;font-family:'Bungee',sans-serif;font-size:15px;letter-spacing:.08em;text-shadow:-1px -1px 0 rgba(0,0,0,.35),1px 1px 0 rgba(255,255,255,.2)}
+.view-d .dy.on{background:var(--teal);color:var(--deep);text-shadow:none}
+.view-d .g3{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:48px 32px}
+.view-d .btn{transition:transform .12s,box-shadow .12s;cursor:pointer}
+.view-d .btn:hover{transform:translate(3px,3px);box-shadow:1px 1px 0 var(--deep)!important}
+.view-d .mg:hover{filter:brightness(1.05)}
+.view-d .mg:active{cursor:grabbing}
+.view-d .mg:focus-visible,.view-d .btn:focus-visible,.view-d input:focus-visible,.view-d button:focus-visible,.view-d a:focus-visible{outline:3px solid var(--paper);outline-offset:3px;box-shadow:0 0 0 3px var(--deep),0 0 0 6px var(--yellow)!important}
+.view-d .tape{clip-path:polygon(0 0,3% 12%,0 25%,3% 38%,0 50%,3% 62%,0 75%,3% 88%,0 100%,100% 100%,97% 88%,100% 75%,97% 62%,100% 50%,97% 38%,100% 25%,97% 12%,100% 0)}
+.view-d .torn-b{clip-path:polygon(0 0,100% 0,100% 100%,97% calc(100% - 7px),94% 100%,90% calc(100% - 8px),86% 100%,82% calc(100% - 6px),78% 100%,73% calc(100% - 8px),69% 100%,64% calc(100% - 6px),60% 100%,55% calc(100% - 8px),51% 100%,46% calc(100% - 6px),42% 100%,37% calc(100% - 8px),33% 100%,28% calc(100% - 6px),24% 100%,19% calc(100% - 8px),15% 100%,10% calc(100% - 6px),6% 100%,3% calc(100% - 8px),0 100%)}
+.view-d .torn-t{clip-path:polygon(0 14px,3% 4px,7% 12px,11% 2px,16% 11px,21% 0,26% 10px,31% 3px,36% 13px,41% 2px,46% 10px,52% 0,57% 12px,62% 3px,67% 11px,72% 1px,77% 13px,82% 4px,87% 11px,92% 0,96% 10px,100% 3px,100% 100%,0 100%)}
+@media(prefers-reduced-motion:reduce){.view-d .btn{transition:none}}
+@media(max-width:1000px){.view-d .g3{grid-template-columns:repeat(2,minmax(0,1fr))}}
+@media(max-width:600px){.view-d .g3{grid-template-columns:minmax(0,1fr)}}
+/* mobile layout (from the mobile design) */
+.view-m a{text-decoration:none;color:inherit}
+.view-m .an{font-family:'Anton',sans-serif;font-weight:400}
+.view-m .ab{font-family:'Abril Fatface',serif;font-weight:400}
+.view-m .se{font-family:'Special Elite',monospace}
+.view-m .bu{font-family:'Bungee',sans-serif}
+.view-m .pm{font-family:'Permanent Marker',cursive}
+.view-m .cv{font-family:'Caveat',cursive;font-weight:700}
+.view-m .br{font-family:'Bricolage Grotesque',sans-serif}
+.view-m .dm{font-family:'DM Mono',monospace}
+.view-m .y{font-family:'Yatra One',serif;font-weight:400}
+.view-m .t{font-family:'Teko',sans-serif;text-transform:uppercase;letter-spacing:.06em}
+.view-m .dy{display:block;background:var(--deep);color:var(--paper);border-radius:4px;padding:12px 16px;font-family:'Bungee',sans-serif;font-size:15px;letter-spacing:.08em;text-shadow:-1px -1px 0 rgba(0,0,0,.35),1px 1px 0 rgba(255,255,255,.2)}
+.view-m .dy.on{background:var(--teal);color:var(--deep);text-shadow:none}
+.view-m .btn{transition:transform .12s,box-shadow .12s;cursor:pointer}
+.view-m .btn:hover{transform:translate(3px,3px);box-shadow:1px 1px 0 var(--deep)!important}
+.view-m .btn:focus-visible,.view-m input:focus-visible,.view-m button:focus-visible,.view-m a:focus-visible{outline:3px solid var(--deep);outline-offset:3px}
+.view-m .tape{clip-path:polygon(0 0,3% 12%,0 25%,3% 38%,0 50%,3% 62%,0 75%,3% 88%,0 100%,100% 100%,97% 88%,100% 75%,97% 62%,100% 50%,97% 38%,100% 25%,97% 12%,100% 0)}
+.view-m .torn-t{clip-path:polygon(0 14px,3% 4px,7% 12px,11% 2px,16% 11px,21% 0,26% 10px,31% 3px,36% 13px,41% 2px,46% 10px,52% 0,57% 12px,62% 3px,67% 11px,72% 1px,77% 13px,82% 4px,87% 11px,92% 0,96% 10px,100% 3px,100% 100%,0 100%)}
+@keyframes tick{from{transform:translateX(0)}to{transform:translateX(-50%)}}
+.view-m .ticker{animation:tick 30s linear infinite}
+@keyframes drop{from{transform:translateY(-46px);opacity:0}to{transform:translateY(0);opacity:1}}
+.view-m .drop{animation:drop .5s ease-out both}
+@media(prefers-reduced-motion:reduce){.view-m .ticker,.view-m .drop{animation:none}
+.view-m .btn{transition:none}}
+.view-m .mg:hover{filter:brightness(1.05)}
+.view-m .mg:active{cursor:grabbing}
+.view-m .mg:focus-visible{outline:3px solid var(--paper);outline-offset:3px;box-shadow:0 0 0 3px var(--deep),0 0 0 6px var(--yellow)!important}
+.view-m .torn-b{clip-path:polygon(0 0,100% 0,100% 100%,97% calc(100% - 7px),94% 100%,90% calc(100% - 8px),86% 100%,82% calc(100% - 6px),78% 100%,73% calc(100% - 8px),69% 100%,64% calc(100% - 6px),60% 100%,55% calc(100% - 8px),51% 100%,46% calc(100% - 6px),42% 100%,37% calc(100% - 8px),33% 100%,28% calc(100% - 6px),24% 100%,19% calc(100% - 8px),15% 100%,10% calc(100% - 6px),6% 100%,3% calc(100% - 8px),0 100%)}
+</style>
+</head>
+<body data-page="magnets">
+<div class="view-d">
+<div id="top" style="width:100%;overflow:hidden;color:var(--deep);font-family:'Figtree',sans-serif;background-color:var(--paper);background-image:linear-gradient(color-mix(in srgb, var(--teal) 16%, transparent) 1px,transparent 1px),linear-gradient(90deg,color-mix(in srgb, var(--teal) 16%, transparent) 1px,transparent 1px);background-size:28px 28px">
+
+<header style="padding:28px clamp(20px,4vw,56px) 0">
+<div style="display:flex;flex-wrap:wrap;align-items:center;justify-content:space-between;gap:20px 28px">
+<a href="index.html" style="position:relative;display:flex;align-items:center;gap:16px;transform:rotate(-1.5deg)">
+<span aria-hidden="true" class="tape" style="position:absolute;left:-14px;top:-10px;width:56px;height:20px;background:color-mix(in srgb, var(--yellow) 85%, transparent);transform:rotate(-30deg);z-index:2"></span>
+<img src="assets/img/logo.png" alt="People of the Verse logo" style="width:76px;height:76px;object-fit:cover;border:6px solid #fff;box-shadow:3px 4px 0 color-mix(in srgb, var(--deep) 35%, transparent)">
+<span class="an" style="font-size:34px;letter-spacing:.02em;text-transform:uppercase;line-height:1">People of the Verse</span>
+</a>
+<nav style="display:flex;flex-wrap:wrap;align-items:center;gap:12px">
+<a href="events.html" class="dy" style="transform:rotate(-1deg)">EVENTS</a>
+<a href="fundraisers.html" class="dy" style="transform:rotate(1deg)">FUNDRAISERS</a>
+<a href="mag.html" class="dy" style="transform:rotate(-.6deg)">POV MAG</a>
+<a href="team.html" class="dy" style="transform:rotate(1.2deg)">TEAM</a>
+<a href="magnets.html" class="dy on" style="transform:rotate(-1deg)">WORD MAGNETS</a>
+<a href="perform.html" class="bu btn" style="background:var(--yellow);color:var(--deep);border:3px solid var(--deep);border-radius:4px;padding:8px 18px;font-size:15px;letter-spacing:.08em;box-shadow:4px 4px 0 var(--deep);transform:rotate(-1.5deg)">PERFORM AT POV</a>
+</nav>
+</div>
+</header>
+
+<section style="padding:64px clamp(20px,4vw,56px) 40px;display:flex;flex-wrap:wrap;gap:32px 56px;align-items:flex-end;justify-content:space-between">
+<div style="flex:1 1 520px;min-width:0">
+<div class="cv" style="display:inline-block;font-size:30px;line-height:1;color:var(--dark);transform:rotate(-2deg)">poetry belongs to everyone</div>
+<h1 class="an" style="margin:8px 0 0;font-size:clamp(56px,9.4vw,140px);line-height:.9;text-transform:uppercase">Write a poem <span style="display:inline-block;background:var(--yellow);padding:0 .1em;transform:rotate(-2deg);box-shadow:6px 7px 0 var(--deep)">together</span></h1>
+</div>
+<p style="flex:1 1 320px;max-width:440px;margin:0;font-size:20px;line-height:1.55;font-weight:500;background:#fff;border:2px solid var(--deep);padding:16px 20px;transform:rotate(1.2deg);box-shadow:5px 5px 0 var(--deep)">Drag words onto the sign to write a poem. Add words of your own. Pin it to the wall, or remix a poem someone else left there.</p>
+</section>
+
+<section style="padding:32px clamp(20px,4vw,56px) 56px">
+<div style="margin:18px 18px 0;border-radius:22px;box-shadow:0 0 0 6px var(--yellow),0 0 0 10px var(--deep),0 0 0 16px var(--teal),0 0 0 20px var(--deep),10px 10px 0 20px var(--deep)">
+<div data-board="1" role="group" aria-label="Word magnet board. Drag the word magnets onto the sign to write a poem." style="position:relative;container-type:inline-size;width:100%;aspect-ratio:100 / 60;border-radius:22px;overflow:hidden;background-color:var(--deep);background-image:repeating-linear-gradient(45deg,color-mix(in srgb, var(--yellow) 8%, transparent) 0 10px,transparent 10px 20px)">
+<div data-sign style="position:absolute;left:0;right:0;top:0;height:30cqw;background-color:var(--paper);background-image:radial-gradient(var(--mist) 2.5px,transparent 2.5px);background-size:24px 24px"></div>
+<div data-if="signEmpty" style="display:contents">
+<div class="cv" style="position:absolute;left:0;right:0;top:0;height:30cqw;display:flex;align-items:center;justify-content:center;padding:0 24px;box-sizing:border-box;text-align:center;font-size:34px;line-height:1.1;color:color-mix(in srgb, var(--deep) 45%, transparent);pointer-events:none">drop words here to write your poem</div>
+</div>
+<div class="t" data-band style="position:absolute;left:0;right:0;top:30cqw;height:3.4cqw;background:var(--yellow);border-top:3px solid var(--deep);border-bottom:3px solid var(--deep);display:flex;align-items:center;justify-content:center;font-size:15px;font-weight:600;white-space:nowrap;overflow:hidden;pointer-events:none">Word tray · drag words up to the sign</div>
+
+</div>
+</div>
+
+<div style="margin-top:56px;display:flex;flex-wrap:wrap;gap:32px 48px;align-items:flex-start">
+<div style="flex:1 1 440px;min-width:0" aria-live="polite">
+<div class="cv" style="font-size:28px;line-height:1;color:var(--dark)">your poem</div>
+<div data-if="hasPoem" style="display:contents" hidden>
+<div style="margin-top:8px;display:flex;flex-direction:column;gap:2px">
+<template data-tpl="poemLines" data-as="l"><div class="y" style="font-size:clamp(26px,3.4vw,42px);line-height:1.2;text-transform:uppercase;overflow-wrap:anywhere">{{ l.text }}</div></template><div data-list="poemLines" style="display:contents"></div>
+</div>
+</div>
+<div data-if="signEmpty" style="display:contents"><div class="se" style="margin-top:10px;font-size:17px;line-height:1.5">Nothing on the sign yet. Drag a word up to begin.</div></div>
+<div data-if="hasNote" style="display:contents" hidden><div class="se" style="margin-top:14px;display:inline-block;background:var(--mist);border:2px solid var(--deep);padding:6px 12px;font-size:15px"><span data-bind="note"></span></div></div>
+</div>
+<div style="flex:1 1 360px;min-width:0;display:flex;flex-wrap:wrap;gap:14px;align-items:center">
+<button type="button" data-mg="shuffle" class="btn t" style="background:var(--yellow);color:var(--deep);border:3px solid var(--deep);border-radius:12px;padding:6px 22px;font-size:24px;font-weight:600;box-shadow:4px 4px 0 var(--deep)">Shuffle the tray</button>
+<button type="button" data-mg="clear" class="btn t" style="background:var(--paper);color:var(--deep);border:3px solid var(--deep);border-radius:12px;padding:6px 22px;font-size:24px;font-weight:600;box-shadow:4px 4px 0 var(--deep)">Clear the sign</button>
+<button type="button" data-mg="reset" class="btn t" style="background:var(--paper);color:var(--deep);border:3px solid var(--deep);border-radius:12px;padding:6px 22px;font-size:24px;font-weight:600;box-shadow:4px 4px 0 var(--deep)">Start over</button>
+</div>
+</div>
+</section>
+
+<section style="padding:72px clamp(20px,4vw,56px) 96px;background:var(--teal);border-top:3px solid var(--deep);border-bottom:3px solid var(--deep);background-image:radial-gradient(color-mix(in srgb, var(--deep) 22%, transparent) 2px,transparent 2px);background-size:22px 22px">
+<div style="display:flex;flex-wrap:wrap;gap:40px 48px;align-items:stretch">
+<form data-form="addword" style="flex:1 1 380px;min-width:0;position:relative;background:#fff;border:2px solid var(--deep);box-shadow:8px 8px 0 var(--deep);padding:36px 28px 28px;display:flex;flex-direction:column;gap:12px;transform:rotate(-.8deg)">
+<span aria-hidden="true" class="tape" style="position:absolute;left:50%;top:-14px;width:100px;height:28px;margin-left:-50px;background:color-mix(in srgb, var(--yellow) 90%, transparent);transform:rotate(2deg)"></span>
+<div class="an" style="font-size:34px;line-height:1;text-transform:uppercase">Add your own word</div>
+<p style="margin:0;font-size:17px;line-height:1.5">Missing the perfect word? Make a magnet for it. One word at a time.</p>
+<label for="newword" class="bu" style="font-size:13px;letter-spacing:.12em">YOUR WORD</label>
+<input id="newword" name="word" type="text" maxlength="14" autocomplete="off" style="box-sizing:border-box;width:100%;background:var(--paper);border:3px solid var(--deep);padding:12px 14px;font-family:'Special Elite',monospace;font-size:18px;color:var(--deep)">
+<button type="submit" class="bu btn" style="align-self:flex-start;background:var(--yellow);color:var(--deep);border:3px solid var(--deep);padding:12px 22px;font-size:15px;letter-spacing:.06em;box-shadow:4px 4px 0 var(--deep)">ADD MAGNET</button>
+</form>
+<form data-form="pin" style="flex:1 1 380px;min-width:0;position:relative;background:var(--yellow);border:2px solid var(--deep);box-shadow:8px 8px 0 var(--deep);padding:36px 28px 28px;display:flex;flex-direction:column;gap:12px;transform:rotate(.8deg)">
+<span aria-hidden="true" class="tape" style="position:absolute;left:50%;top:-14px;width:100px;height:28px;margin-left:-50px;background:color-mix(in srgb, var(--teal) 85%, transparent);transform:rotate(-2deg)"></span>
+<div class="an" style="font-size:34px;line-height:1;text-transform:uppercase">Pin it to the wall</div>
+<p style="margin:0;font-size:17px;line-height:1.5">Happy with your poem? Sign it and pin it for the next visitor to find.</p>
+<label for="signer" class="bu" style="font-size:13px;letter-spacing:.12em">SIGNED BY (OPTIONAL)</label>
+<input id="signer" name="signer" type="text" maxlength="30" autocomplete="off" style="box-sizing:border-box;width:100%;background:var(--paper);border:3px solid var(--deep);padding:12px 14px;font-family:'Special Elite',monospace;font-size:18px;color:var(--deep)">
+<button type="submit" class="bu btn" style="align-self:flex-start;background:var(--deep);color:var(--yellow);border:3px solid var(--deep);padding:12px 22px;font-size:15px;letter-spacing:.06em;box-shadow:4px 4px 0 var(--paper)">PIN THIS POEM</button>
+</form>
+</div>
+</section>
+
+<section style="padding:104px clamp(20px,4vw,56px) 120px">
+<div style="display:flex;flex-wrap:wrap;align-items:flex-end;justify-content:space-between;gap:16px 32px;margin-bottom:56px">
+<h2 class="an" style="margin:0;font-size:clamp(44px,6.4vw,92px);line-height:.95;text-transform:uppercase">The wall</h2>
+<p style="margin:0;max-width:400px;font-size:19px;line-height:1.55">Poems pinned by visitors. Take one and remix it on the board.</p>
+</div>
+<div class="g3">
+<template data-tpl="wall" data-as="p">
+<div style="position:relative;transform:rotate({{ p.rot }}deg) translateY({{ p.dy }}px)">
+<span aria-hidden="true" class="tape" style="position:absolute;left:50%;top:-14px;width:84px;height:26px;margin-left:-42px;background:color-mix(in srgb, var(--yellow) 90%, transparent);z-index:2;transform:rotate(-3deg)"></span>
+<div class="torn-b" style="background:#fff;border:2px solid var(--deep);border-bottom:0;padding:34px 24px 40px">
+<div style="display:flex;flex-direction:column;gap:2px">
+<sc-for list="{{ p.lines }}" as="l" hint-placeholder-count="3"><div class="se" style="font-size:20px;line-height:1.4;text-transform:uppercase;overflow-wrap:anywhere">{{ l }}</div></sc-for>
+</div>
+<div class="cv" style="margin-top:14px;font-size:26px;line-height:1">by {{ p.by }}</div>
+<button type="button" data-remix="{{ p.i }}" class="bu btn" style="margin-top:16px;background:var(--yellow);color:var(--deep);border:3px solid var(--deep);padding:9px 16px;font-size:13px;letter-spacing:.06em;box-shadow:3px 3px 0 var(--deep)">REMIX THIS POEM</button>
+</div>
+</div>
+</template><div data-list="wall" style="display:contents"></div>
+</div>
+</section>
+
+<footer class="torn-t" style="margin-top:-12px;background:var(--deep);color:var(--paper);padding:112px clamp(20px,4vw,56px) 48px">
+<h2 class="an" style="margin:0;max-width:1100px;font-size:clamp(40px,6.4vw,92px);line-height:1;text-transform:uppercase;color:var(--yellow)">Show up for others and we show up for you.</h2>
+<p style="margin:28px 0 0;max-width:640px;font-size:21px;line-height:1.6">Let&rsquo;s build this community together, not just as performers, but also as listeners. See you at our next event! Happy poetry to you!</p>
+<div style="margin-top:44px;display:flex;flex-wrap:wrap;align-items:center;justify-content:space-between;gap:28px 40px">
+<div class="pm" style="font-size:34px;line-height:1.25;transform:rotate(-2deg)"><span style="color:var(--yellow)">Feel it. Like it. Share it.</span><br>Because poetry belongs to everyone.</div>
+<div style="position:relative;display:flex;align-items:center;gap:18px;background:var(--paper);color:var(--deep);padding:22px 22px 16px;transform:rotate(2deg);box-shadow:5px 5px 0 var(--teal)"><span aria-hidden="true" class="tape" style="position:absolute;left:50%;top:-12px;width:70px;height:22px;margin-left:-35px;background:color-mix(in srgb, var(--yellow) 90%, transparent);transform:rotate(-4deg)"></span><span class="an" style="flex:none;width:80px;height:80px;border:3px solid var(--deep);display:flex;align-items:center;justify-content:center;font-size:24px">QR</span><span style="font-size:16px;line-height:1.45"><strong style="font-size:19px">Been to a reading?</strong><br>Scan to share feedback or a testimonial.</span></div>
+</div>
+<div class="se" style="margin-top:48px;display:flex;flex-wrap:wrap;align-items:center;gap:10px 28px;font-size:16px;letter-spacing:.06em;text-transform:uppercase;color:var(--yellow)"><a href="events.html" style="padding:8px 0">Events</a><a href="fundraisers.html" style="padding:8px 0">Fundraisers</a><a href="mag.html" style="padding:8px 0">PoV Mag</a><a href="team.html" style="padding:8px 0">Team</a><a href="magnets.html" style="padding:8px 0">Word magnets</a><a href="perform.html" style="padding:8px 0">Perform at PoV</a><a href="https://www.instagram.com/people_of_the_verse/" style="padding:8px 0">Instagram ↗</a><a href="#" data-href="links.youtube" style="padding:8px 0">YouTube <span data-yt>[link soon]</span></a></div>
+<div style="margin-top:20px;display:flex;align-items:center;gap:12px;color:var(--paper)" class="se"><img src="assets/img/logo.png" alt="" style="width:44px;height:44px;object-fit:cover;border:3px solid #fff">People of the Verse · Bangalore</div>
+</footer>
+
+</div>
+</div>
+<div class="view-m">
+<div id="top-m" style="width:100%;overflow:hidden;color:var(--deep);font-family:'Figtree',sans-serif;background-color:var(--paper);background-image:linear-gradient(color-mix(in srgb, var(--teal) 16%, transparent) 1px,transparent 1px),linear-gradient(90deg,color-mix(in srgb, var(--teal) 16%, transparent) 1px,transparent 1px);background-size:28px 28px">
+<header style="padding:18px 20px 0">
+<div style="display:flex;align-items:center;justify-content:space-between;gap:12px">
+<a href="index.html" style="position:relative;display:flex;align-items:center;gap:12px;transform:rotate(-1.5deg)">
+<span aria-hidden="true" class="tape" style="position:absolute;left:-10px;top:-8px;width:40px;height:16px;background:color-mix(in srgb, var(--yellow) 85%, transparent);transform:rotate(-30deg);z-index:2"></span>
+<img src="assets/img/logo.png" alt="People of the Verse logo" style="width:56px;height:56px;object-fit:cover;border:4px solid #fff;box-shadow:2px 3px 0 color-mix(in srgb, var(--deep) 35%, transparent)">
+<span class="an" style="font-size:22px;letter-spacing:.02em;text-transform:uppercase;line-height:1">People of<br>the Verse</span>
+</a>
+<button type="button" data-act="menu" aria-expanded="false" class="bu btn" style="min-height:48px;min-width:96px;background:var(--deep);color:var(--paper);border:0;border-radius:4px;padding:0 16px;font-size:14px;letter-spacing:.08em;text-shadow:-1px -1px 0 rgba(0,0,0,.35),1px 1px 0 rgba(255,255,255,.2)">MENU</button>
+</div>
+<div data-if="menuOpen" style="display:contents" hidden>
+<nav style="display:flex;flex-direction:column;gap:10px;padding:16px 0 4px">
+<a href="events.html" class="dy">EVENTS</a>
+<a href="fundraisers.html" class="dy">FUNDRAISERS</a>
+<a href="mag.html" class="dy">POV MAG</a>
+<a href="team.html" class="dy">TEAM</a>
+<a href="magnets.html" class="dy on">WORD MAGNETS</a>
+<a href="perform.html" class="bu btn" style="display:block;text-align:center;background:var(--yellow);color:var(--deep);border:3px solid var(--deep);border-radius:4px;padding:12px 18px;font-size:15px;letter-spacing:.08em;box-shadow:4px 4px 0 var(--deep)">PERFORM AT POV</a>
+</nav>
+</div>
+</header>
+<section style="padding:36px 20px 20px"><div class="cv" style="display:inline-block;font-size:26px;line-height:1;color:var(--dark);transform:rotate(-2deg)">poetry belongs to everyone</div><h1 class="an" style="margin:8px 0 0;font-size:76px;line-height:.9;text-transform:uppercase">Write a poem <span style="display:inline-block;background:var(--yellow);padding:0 .1em;transform:rotate(-2deg);box-shadow:5px 6px 0 var(--deep)">together</span></h1><p style="margin:28px 0 0;font-size:18px;line-height:1.5;font-weight:500;background:#fff;border:2px solid var(--deep);padding:14px 16px;transform:rotate(1.2deg);box-shadow:4px 4px 0 var(--deep)">Drag words onto the sign to write a poem. Add words of your own. Pin it to the wall, or remix a poem someone else left there.</p></section>
+<section style="padding:8px 0 48px">
+<div style="margin:26px 32px 0 26px;border-radius:22px;box-shadow:0 0 0 6px var(--yellow),0 0 0 10px var(--deep),0 0 0 16px var(--teal),0 0 0 20px var(--deep),10px 10px 0 20px var(--deep)">
+<div data-board="1" role="group" aria-label="Word magnet board. Drag the word magnets onto the sign to write a poem." style="position:relative;container-type:inline-size;width:100%;aspect-ratio:100 / 60;border-radius:22px;overflow:hidden;background-color:var(--deep);background-image:repeating-linear-gradient(45deg,color-mix(in srgb, var(--yellow) 8%, transparent) 0 10px,transparent 10px 20px)">
+<div data-sign style="position:absolute;left:0;right:0;top:0;height:30cqw;background-color:var(--paper);background-image:radial-gradient(var(--mist) 2.5px,transparent 2.5px);background-size:24px 24px"></div>
+<div data-if="signEmpty" style="display:contents">
+<div class="cv" style="position:absolute;left:0;right:0;top:0;height:30cqw;display:flex;align-items:center;justify-content:center;padding:0 20px;box-sizing:border-box;text-align:center;font-size:30px;line-height:1.1;color:color-mix(in srgb, var(--deep) 45%, transparent);pointer-events:none">drop words here to write your poem</div>
+</div>
+<div class="t" data-band style="position:absolute;left:0;right:0;top:30cqw;height:3.4cqw;background:var(--yellow);border-top:3px solid var(--deep);border-bottom:3px solid var(--deep);display:flex;align-items:center;justify-content:center;font-size:15px;font-weight:600;white-space:nowrap;overflow:hidden;pointer-events:none">Word tray · drag words up to the sign</div>
+
+</div>
+</div>
+<div style="padding:44px 20px 0"><div aria-live="polite"><div style="flex:1 1 440px;min-width:0" aria-live="polite">
+<div class="cv" style="font-size:28px;line-height:1;color:var(--dark)">your poem</div>
+<div data-if="hasPoem" style="display:contents" hidden>
+<div style="margin-top:8px;display:flex;flex-direction:column;gap:2px">
+<template data-tpl="poemLines" data-as="l"><div class="y" style="font-size:28px;line-height:1.2;text-transform:uppercase;overflow-wrap:anywhere">{{ l.text }}</div></template><div data-list="poemLines" style="display:contents"></div>
+</div>
+</div>
+<div data-if="signEmpty" style="display:contents"><div class="se" style="margin-top:10px;font-size:17px;line-height:1.5">Nothing on the sign yet. Drag a word up to begin.</div></div>
+<div data-if="hasNote" style="display:contents" hidden><div class="se" style="margin-top:14px;display:inline-block;background:var(--mist);border:2px solid var(--deep);padding:6px 12px;font-size:15px"><span data-bind="note"></span></div></div>
+</div></div><div style="margin-top:28px;display:flex;flex-wrap:wrap;gap:12px"><button type="button" data-mg="shuffle" class="btn t" style="min-height:48px;background:var(--yellow);color:var(--deep);border:3px solid var(--deep);border-radius:12px;padding:6px 18px;font-size:22px;font-weight:600;box-shadow:4px 4px 0 var(--deep)">Shuffle the tray</button><button type="button" data-mg="clear" class="btn t" style="min-height:48px;background:var(--paper);color:var(--deep);border:3px solid var(--deep);border-radius:12px;padding:6px 18px;font-size:22px;font-weight:600;box-shadow:4px 4px 0 var(--deep)">Clear the sign</button><button type="button" data-mg="reset" class="btn t" style="min-height:48px;background:var(--paper);color:var(--deep);border:3px solid var(--deep);border-radius:12px;padding:6px 18px;font-size:22px;font-weight:600;box-shadow:4px 4px 0 var(--deep)">Start over</button></div></div></section>
+<section style="padding:56px 20px 72px;background:var(--teal);border-top:3px solid var(--deep);border-bottom:3px solid var(--deep);background-image:radial-gradient(color-mix(in srgb, var(--deep) 22%, transparent) 2px,transparent 2px);background-size:22px 22px"><div style="display:flex;flex-direction:column;gap:44px"><form data-form="addword" style="position:relative;background:#fff;border:2px solid var(--deep);box-shadow:6px 6px 0 var(--deep);padding:32px 20px 24px;display:flex;flex-direction:column;gap:10px;transform:rotate(-.8deg)"><span aria-hidden="true" class="tape" style="position:absolute;left:50%;top:-14px;width:100px;height:28px;margin-left:-50px;background:color-mix(in srgb, var(--yellow) 90%, transparent);transform:rotate(2deg)"></span><div class="an" style="font-size:32px;line-height:1;text-transform:uppercase">Add your own word</div><p style="margin:0;font-size:16px;line-height:1.5">Missing the perfect word? Make a magnet for it. One word at a time.</p><label for="newword-m" class="bu" style="font-size:12px;letter-spacing:.12em">YOUR WORD</label><input id="newword-m" name="word" type="text" maxlength="14" autocomplete="off" style="box-sizing:border-box;width:100%;min-height:48px;background:var(--paper);border:3px solid var(--deep);padding:10px 12px;font-family:'Special Elite',monospace;font-size:17px;color:var(--deep)"><button type="submit" class="bu btn" style="min-height:48px;background:var(--yellow);color:var(--deep);border:3px solid var(--deep);padding:12px 22px;font-size:15px;letter-spacing:.06em;box-shadow:4px 4px 0 var(--deep)">ADD MAGNET</button></form><form data-form="pin" style="position:relative;background:var(--yellow);border:2px solid var(--deep);box-shadow:6px 6px 0 var(--deep);padding:32px 20px 24px;display:flex;flex-direction:column;gap:10px;transform:rotate(.8deg)"><span aria-hidden="true" class="tape" style="position:absolute;left:50%;top:-14px;width:100px;height:28px;margin-left:-50px;background:color-mix(in srgb, var(--teal) 85%, transparent);transform:rotate(-2deg)"></span><div class="an" style="font-size:32px;line-height:1;text-transform:uppercase">Pin it to the wall</div><p style="margin:0;font-size:16px;line-height:1.5">Happy with your poem? Sign it and pin it for the next visitor to find.</p><label for="signer-m" class="bu" style="font-size:12px;letter-spacing:.12em">SIGNED BY (OPTIONAL)</label><input id="signer-m" name="signer" type="text" maxlength="30" autocomplete="off" style="box-sizing:border-box;width:100%;min-height:48px;background:var(--paper);border:3px solid var(--deep);padding:10px 12px;font-family:'Special Elite',monospace;font-size:17px;color:var(--deep)"><button type="submit" class="bu btn" style="min-height:48px;background:var(--deep);color:var(--yellow);border:3px solid var(--deep);padding:12px 22px;font-size:15px;letter-spacing:.06em;box-shadow:4px 4px 0 var(--paper)">PIN THIS POEM</button></form></div></section>
+<section style="padding:64px 20px 80px"><h2 class="an" style="margin:0 0 10px;font-size:56px;line-height:.95;text-transform:uppercase">The wall</h2><p style="margin:0 0 44px;font-size:18px;line-height:1.5">Poems pinned by visitors. Take one and remix it on the board.</p><div style="display:flex;flex-direction:column;gap:48px"><template data-tpl="wall" data-as="p"><div style="position:relative;transform:rotate({{ p.rot }}deg) translateY({{ p.dy }}px)"><span aria-hidden="true" class="tape" style="position:absolute;left:50%;top:-14px;width:84px;height:26px;margin-left:-42px;background:color-mix(in srgb, var(--yellow) 90%, transparent);z-index:2;transform:rotate(-3deg)"></span><div class="torn-b" style="background:#fff;border:2px solid var(--deep);border-bottom:0;padding:32px 20px 40px"><div style="display:flex;flex-direction:column;gap:2px"><sc-for list="{{ p.lines }}" as="l" hint-placeholder-count="3"><div class="se" style="font-size:19px;line-height:1.4;text-transform:uppercase;overflow-wrap:anywhere">{{ l }}</div></sc-for></div><div class="cv" style="margin-top:14px;font-size:26px;line-height:1">by {{ p.by }}</div><button type="button" data-remix="{{ p.i }}" class="bu btn" style="margin-top:16px;min-height:48px;background:var(--yellow);color:var(--deep);border:3px solid var(--deep);padding:10px 16px;font-size:13px;letter-spacing:.06em;box-shadow:3px 3px 0 var(--deep)">REMIX THIS POEM</button></div></div></template><div data-list="wall" style="display:contents"></div></div></section>
+<footer class="torn-t" style="margin-top:-10px;background:var(--deep);color:var(--paper);padding:80px 20px 36px">
+<h2 class="an" style="margin:0;font-size:46px;line-height:1;text-transform:uppercase;color:var(--yellow)">Show up for others and we show up for you.</h2>
+<p style="margin:20px 0 0;font-size:18px;line-height:1.6">Let&rsquo;s build this community together, not just as performers, but also as listeners. See you at our next event! Happy poetry to you!</p>
+<div class="pm" style="margin-top:32px;font-size:28px;line-height:1.25;transform:rotate(-2deg)"><span style="color:var(--yellow)">Feel it. Like it. Share it.</span><br>Because poetry belongs to everyone.</div>
+<div style="position:relative;margin-top:36px;display:flex;align-items:center;gap:14px;background:var(--paper);color:var(--deep);padding:20px 16px 14px;transform:rotate(1.5deg);box-shadow:4px 4px 0 var(--teal)"><span aria-hidden="true" class="tape" style="position:absolute;left:50%;top:-10px;width:60px;height:20px;margin-left:-30px;background:color-mix(in srgb, var(--yellow) 90%, transparent);transform:rotate(-4deg)"></span><span class="an" style="flex:none;width:68px;height:68px;border:3px solid var(--deep);display:flex;align-items:center;justify-content:center;font-size:20px">QR</span><span style="font-size:15px;line-height:1.4"><strong style="font-size:17px">Been to a reading?</strong><br>Scan to share feedback or a testimonial.</span></div>
+<div class="se" style="margin-top:36px;display:flex;flex-wrap:wrap;gap:0 22px;font-size:14px;letter-spacing:.06em;text-transform:uppercase;color:var(--yellow)"><a href="events.html" style="padding:12px 0">Events</a><a href="fundraisers.html" style="padding:12px 0">Fundraisers</a><a href="mag.html" style="padding:12px 0">PoV Mag</a><a href="team.html" style="padding:12px 0">Team</a><a href="magnets.html" style="padding:12px 0">Word magnets</a><a href="perform.html" style="padding:12px 0">Perform at PoV</a><a href="https://www.instagram.com/people_of_the_verse/" style="padding:12px 0">Instagram ↗</a><a href="#" data-href="links.youtube" style="padding:12px 0">YouTube <span data-yt>[link soon]</span></a></div>
+<div class="se" style="margin-top:16px;display:flex;align-items:center;gap:10px;font-size:14px"><img src="assets/img/logo.png" alt="" style="width:40px;height:40px;object-fit:cover;border:3px solid #fff">People of the Verse · Bangalore</div>
+</footer>
+</div>
+</div>
+<script src="assets/js/content.js"></script>
+<script src="assets/js/site.js"></script>
+<script src="assets/js/magnets.js"></script>
+</body>
+</html>

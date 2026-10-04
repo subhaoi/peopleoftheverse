@@ -1,0 +1,282 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>People of the Verse: Perform at PoV</title>
+<meta name="theme-color" content="#289F88">
+<link rel="icon" href="assets/img/logo.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Anton&family=Abril+Fatface&family=Special+Elite&family=Bungee&family=Permanent+Marker&family=Caveat:wght@700&family=Figtree:wght@400;500;600;700&family=Bricolage+Grotesque:opsz,wght@12..96,400..800&family=DM+Mono:wght@400;500&family=Yatra+One&family=Teko:wght@500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="assets/css/site.css">
+<style>
+/* desktop layout (from the desktop design) */
+.view-d a{text-decoration:none;color:inherit}
+.view-d .an{font-family:'Anton',sans-serif;font-weight:400}
+.view-d .ab{font-family:'Abril Fatface',serif;font-weight:400}
+.view-d .se{font-family:'Special Elite',monospace}
+.view-d .bu{font-family:'Bungee',sans-serif}
+.view-d .pm{font-family:'Permanent Marker',cursive}
+.view-d .cv{font-family:'Caveat',cursive;font-weight:700}
+.view-d .br{font-family:'Bricolage Grotesque',sans-serif}
+.view-d .y{font-family:'Yatra One',serif;font-weight:400}
+.view-d .t{font-family:'Teko',sans-serif;text-transform:uppercase;letter-spacing:.06em}
+.view-d .dy{display:inline-block;background:var(--deep);color:var(--paper);border-radius:4px;padding:8px 16px;font-family:'Bungee',sans-serif;font-size:15px;letter-spacing:.08em;text-shadow:-1px -1px 0 rgba(0,0,0,.35),1px 1px 0 rgba(255,255,255,.2)}
+.view-d .dy.on{background:var(--teal);color:var(--deep);text-shadow:none}
+.view-d .g4{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:40px 28px}
+.view-d .btn{transition:transform .12s,box-shadow .12s;cursor:pointer}
+.view-d .btn:hover{transform:translate(3px,3px);box-shadow:1px 1px 0 var(--deep)!important}
+.view-d .btn:focus-visible,.view-d input:focus-visible,.view-d button:focus-visible,.view-d a:focus-visible{outline:3px solid var(--deep);outline-offset:3px}
+.view-d .tape{clip-path:polygon(0 0,3% 12%,0 25%,3% 38%,0 50%,3% 62%,0 75%,3% 88%,0 100%,100% 100%,97% 88%,100% 75%,97% 62%,100% 50%,97% 38%,100% 25%,97% 12%,100% 0)}
+.view-d .torn-t{clip-path:polygon(0 14px,3% 4px,7% 12px,11% 2px,16% 11px,21% 0,26% 10px,31% 3px,36% 13px,41% 2px,46% 10px,52% 0,57% 12px,62% 3px,67% 11px,72% 1px,77% 13px,82% 4px,87% 11px,92% 0,96% 10px,100% 3px,100% 100%,0 100%)}
+@keyframes drop{from{transform:translateY(-46px);opacity:0}to{transform:translateY(0);opacity:1}}
+.view-d .drop{animation:drop .5s ease-out both}
+@media(prefers-reduced-motion:reduce){.view-d .drop{animation:none}
+.view-d .btn{transition:none}}
+@media(max-width:1000px){.view-d .g4{grid-template-columns:repeat(2,minmax(0,1fr))}}
+@media(max-width:600px){.view-d .g4{grid-template-columns:minmax(0,1fr)}}
+/* mobile layout (from the mobile design) */
+.view-m a{text-decoration:none;color:inherit}
+.view-m .an{font-family:'Anton',sans-serif;font-weight:400}
+.view-m .ab{font-family:'Abril Fatface',serif;font-weight:400}
+.view-m .se{font-family:'Special Elite',monospace}
+.view-m .bu{font-family:'Bungee',sans-serif}
+.view-m .pm{font-family:'Permanent Marker',cursive}
+.view-m .cv{font-family:'Caveat',cursive;font-weight:700}
+.view-m .br{font-family:'Bricolage Grotesque',sans-serif}
+.view-m .dm{font-family:'DM Mono',monospace}
+.view-m .y{font-family:'Yatra One',serif;font-weight:400}
+.view-m .t{font-family:'Teko',sans-serif;text-transform:uppercase;letter-spacing:.06em}
+.view-m .dy{display:block;background:var(--deep);color:var(--paper);border-radius:4px;padding:12px 16px;font-family:'Bungee',sans-serif;font-size:15px;letter-spacing:.08em;text-shadow:-1px -1px 0 rgba(0,0,0,.35),1px 1px 0 rgba(255,255,255,.2)}
+.view-m .dy.on{background:var(--teal);color:var(--deep);text-shadow:none}
+.view-m .btn{transition:transform .12s,box-shadow .12s;cursor:pointer}
+.view-m .btn:hover{transform:translate(3px,3px);box-shadow:1px 1px 0 var(--deep)!important}
+.view-m .btn:focus-visible,.view-m input:focus-visible,.view-m button:focus-visible,.view-m a:focus-visible{outline:3px solid var(--deep);outline-offset:3px}
+.view-m .tape{clip-path:polygon(0 0,3% 12%,0 25%,3% 38%,0 50%,3% 62%,0 75%,3% 88%,0 100%,100% 100%,97% 88%,100% 75%,97% 62%,100% 50%,97% 38%,100% 25%,97% 12%,100% 0)}
+.view-m .torn-t{clip-path:polygon(0 14px,3% 4px,7% 12px,11% 2px,16% 11px,21% 0,26% 10px,31% 3px,36% 13px,41% 2px,46% 10px,52% 0,57% 12px,62% 3px,67% 11px,72% 1px,77% 13px,82% 4px,87% 11px,92% 0,96% 10px,100% 3px,100% 100%,0 100%)}
+@keyframes tick{from{transform:translateX(0)}to{transform:translateX(-50%)}}
+.view-m .ticker{animation:tick 30s linear infinite}
+@keyframes drop{from{transform:translateY(-46px);opacity:0}to{transform:translateY(0);opacity:1}}
+.view-m .drop{animation:drop .5s ease-out both}
+@media(prefers-reduced-motion:reduce){.view-m .ticker,.view-m .drop{animation:none}
+.view-m .btn{transition:none}}
+</style>
+</head>
+<body data-page="perform">
+<div class="view-d">
+<div id="top" style="width:100%;overflow:hidden;color:var(--deep);font-family:'Figtree',sans-serif;background-color:var(--paper);background-image:linear-gradient(color-mix(in srgb, var(--teal) 16%, transparent) 1px,transparent 1px),linear-gradient(90deg,color-mix(in srgb, var(--teal) 16%, transparent) 1px,transparent 1px);background-size:28px 28px">
+
+<header style="padding:28px clamp(20px,4vw,56px) 0">
+<div style="display:flex;flex-wrap:wrap;align-items:center;justify-content:space-between;gap:20px 28px">
+<a href="index.html" style="position:relative;display:flex;align-items:center;gap:16px;transform:rotate(-1.5deg)">
+<span aria-hidden="true" class="tape" style="position:absolute;left:-14px;top:-10px;width:56px;height:20px;background:color-mix(in srgb, var(--yellow) 85%, transparent);transform:rotate(-30deg);z-index:2"></span>
+<img src="assets/img/logo.png" alt="People of the Verse logo" style="width:76px;height:76px;object-fit:cover;border:6px solid #fff;box-shadow:3px 4px 0 color-mix(in srgb, var(--deep) 35%, transparent)">
+<span class="an" style="font-size:34px;letter-spacing:.02em;text-transform:uppercase;line-height:1">People of the Verse</span>
+</a>
+<nav style="display:flex;flex-wrap:wrap;align-items:center;gap:12px">
+<a href="events.html" class="dy" style="transform:rotate(-1deg)">EVENTS</a>
+<a href="fundraisers.html" class="dy" style="transform:rotate(1deg)">FUNDRAISERS</a>
+<a href="mag.html" class="dy" style="transform:rotate(-.6deg)">POV MAG</a>
+<a href="team.html" class="dy" style="transform:rotate(1.2deg)">TEAM</a>
+<a href="magnets.html" class="dy" style="transform:rotate(-1deg)">WORD MAGNETS</a>
+<a href="perform.html" class="bu btn" style="background:var(--teal);color:var(--deep);border:3px solid var(--deep);border-radius:4px;padding:8px 18px;font-size:15px;letter-spacing:.08em;box-shadow:4px 4px 0 var(--deep);transform:rotate(-1.5deg)">PERFORM AT POV</a>
+</nav>
+</div>
+</header>
+
+<section style="padding:72px clamp(20px,4vw,56px) 96px">
+<div class="se" style="display:inline-block;background:#fff;border:2px solid var(--deep);padding:6px 14px;font-size:15px;letter-spacing:.08em;text-transform:uppercase;transform:rotate(-1.5deg);box-shadow:3px 3px 0 var(--deep)">For poets</div>
+<h1 class="an" style="margin:24px 0 0;font-size:clamp(60px,10.4vw,156px);line-height:.9;text-transform:uppercase">How to perform <span style="display:inline-block;background:var(--yellow);padding:0 .1em;transform:rotate(-2deg);box-shadow:6px 7px 0 var(--deep)">at PoV</span></h1>
+<div style="margin-top:36px;display:flex;flex-wrap:wrap;align-items:center;gap:20px 36px">
+<p style="margin:0;max-width:540px;font-size:21px;line-height:1.55;font-weight:500">We want to build a community of listeners who show up for each other. If you would like to perform, here is how.</p>
+<a href="#slip" class="btn br" style="background:var(--yellow);border:3px solid var(--deep);border-radius:999px;padding:14px 28px;font-size:18px;font-weight:800;box-shadow:5px 5px 0 var(--deep)">Put a slip in ↓</a>
+</div>
+</section>
+
+<section style="padding:88px clamp(20px,4vw,56px) 104px;background:var(--teal);border-top:3px solid var(--deep);border-bottom:3px solid var(--deep);background-image:radial-gradient(color-mix(in srgb, var(--deep) 22%, transparent) 2px,transparent 2px);background-size:22px 22px">
+<h2 class="an" style="margin:0 0 64px;font-size:clamp(44px,6.4vw,92px);line-height:.95;text-transform:uppercase;color:var(--paper);text-shadow:4px 4px 0 var(--deep)">Four ways to the mic.</h2>
+<div class="g4">
+<div style="position:relative;background-color:#fff;background-image:repeating-linear-gradient(transparent 0 31px,color-mix(in srgb, var(--teal) 55%, transparent) 31px 32px);border:2px solid var(--deep);box-shadow:6px 6px 0 var(--deep);padding:50px 24px 28px;transform:rotate(-2deg)"><span aria-hidden="true" style="position:absolute;left:50%;top:-12px;margin-left:-13px;width:26px;height:26px;border-radius:50%;background:var(--yellow);border:3px solid var(--deep);box-shadow:2px 3px 0 color-mix(in srgb, var(--deep) 40%, transparent)"></span><div class="ab" style="font-size:72px;line-height:.9;color:var(--teal)">1</div><div class="an" style="margin:10px 0 8px;font-size:28px;line-height:1.05;text-transform:uppercase">Attend our events each month</div><div class="cv" style="font-size:25px;line-height:32px">Come to our monthly readings. Entry is free.</div><a href="events.html" class="se" style="display:inline-block;margin-top:14px;font-size:14px;border-bottom:3px solid var(--teal);padding:4px 0">see the next reading →</a></div>
+<div style="position:relative;background-color:var(--paper);background-image:repeating-linear-gradient(transparent 0 31px,color-mix(in srgb, var(--teal) 55%, transparent) 31px 32px);border:2px solid var(--deep);box-shadow:6px 6px 0 var(--deep);padding:50px 24px 28px;transform:rotate(1.4deg) translateY(10px)"><span aria-hidden="true" style="position:absolute;left:50%;top:-12px;margin-left:-13px;width:26px;height:26px;border-radius:50%;background:var(--yellow);border:3px solid var(--deep);box-shadow:2px 3px 0 color-mix(in srgb, var(--deep) 40%, transparent)"></span><div class="ab" style="font-size:72px;line-height:.9;color:var(--teal)">2</div><div class="an" style="margin:10px 0 8px;font-size:28px;line-height:1.05;text-transform:uppercase">Be incredible listeners</div><div class="cv" style="font-size:25px;line-height:32px">Give every poet your full attention.</div></div>
+<div style="position:relative;background-color:#fff;background-image:repeating-linear-gradient(transparent 0 31px,color-mix(in srgb, var(--teal) 55%, transparent) 31px 32px);border:2px solid var(--deep);box-shadow:6px 6px 0 var(--deep);padding:50px 24px 28px;transform:rotate(-1deg)"><span aria-hidden="true" style="position:absolute;left:50%;top:-12px;margin-left:-13px;width:26px;height:26px;border-radius:50%;background:var(--yellow);border:3px solid var(--deep);box-shadow:2px 3px 0 color-mix(in srgb, var(--deep) 40%, transparent)"></span><div class="ab" style="font-size:72px;line-height:.9;color:var(--teal)">3</div><div class="an" style="margin:10px 0 8px;font-size:28px;line-height:1.05;text-transform:uppercase">Encourage fellow poets</div><div class="cv" style="font-size:25px;line-height:32px">Show up and cheer them on.</div></div>
+<div style="position:relative;background-color:var(--yellow);background-image:repeating-linear-gradient(transparent 0 31px,color-mix(in srgb, var(--deep) 35%, transparent) 31px 32px);border:2px solid var(--deep);box-shadow:6px 6px 0 var(--deep);padding:50px 24px 28px;transform:rotate(2deg) translateY(6px)"><span aria-hidden="true" style="position:absolute;left:50%;top:-12px;margin-left:-13px;width:26px;height:26px;border-radius:50%;background:var(--paper);border:3px solid var(--deep);box-shadow:2px 3px 0 color-mix(in srgb, var(--deep) 40%, transparent)"></span><div class="ab" style="font-size:72px;line-height:.9;color:var(--paper);-webkit-text-stroke:2px var(--deep)">4</div><div class="an" style="margin:10px 0 8px;font-size:28px;line-height:1.05;text-transform:uppercase">Sign up for Spot Slots</div><div class="cv" style="font-size:25px;line-height:32px">Put your name in our audience box. If it gets picked, you get the stage.</div><a href="#slip" class="se" style="display:inline-block;margin-top:14px;font-size:14px;border-bottom:3px solid var(--deep);padding:4px 0">put a slip in →</a></div>
+</div>
+</section>
+
+<section style="padding:104px clamp(20px,4vw,56px) 88px">
+<div style="display:flex;flex-wrap:wrap;gap:48px;align-items:flex-start">
+<div style="flex:1 1 320px;min-width:0">
+<div class="cv" style="display:inline-block;font-size:30px;line-height:1;color:var(--dark);transform:rotate(-2deg)">the short list</div>
+<h2 class="an" style="margin:6px 0 18px;font-size:clamp(44px,5.6vw,80px);line-height:.95;text-transform:uppercase">What we look for</h2>
+<p style="margin:0;max-width:340px;font-size:20px;line-height:1.55;font-weight:500">Each month we pick our line-up of performers based on:</p>
+</div>
+<div style="flex:2 1 520px;min-width:0;display:flex;flex-direction:column;align-items:flex-start;gap:20px">
+<div class="tape" style="background-color:var(--yellow);background-image:repeating-linear-gradient(90deg,color-mix(in srgb, var(--deep) 10%, transparent) 0 10px,transparent 10px 20px);padding:14px 36px;font-size:24px;font-weight:700;transform:rotate(-1.5deg);box-shadow:3px 4px 0 color-mix(in srgb, var(--deep) 25%, transparent)">Quality of writing</div>
+<div class="tape" style="background-color:#fff;background-image:repeating-linear-gradient(45deg,color-mix(in srgb, var(--teal) 30%, transparent) 0 10px,transparent 10px 20px);padding:14px 36px;font-size:24px;font-weight:700;transform:rotate(1deg) translateX(40px)">Authenticity</div>
+<div class="tape" style="background-color:var(--mist);background-image:radial-gradient(color-mix(in srgb, var(--deep) 25%, transparent) 3px,transparent 3px);background-size:18px 18px;padding:14px 36px;font-size:24px;font-weight:700;transform:rotate(-.8deg) translateX(14px)">New and refreshing perspectives</div>
+<div class="tape" style="background-color:var(--yellow);background-image:repeating-linear-gradient(-45deg,color-mix(in srgb, var(--deep) 10%, transparent) 0 10px,transparent 10px 20px);padding:14px 36px;font-size:24px;font-weight:700;transform:rotate(1.4deg) translateX(66px);box-sizing:border-box;max-width:calc(100% - 70px)">Respect for everyone&rsquo;s agency, religion, caste, gender, belief systems</div>
+<div class="tape" style="background-color:#fff;background-image:repeating-linear-gradient(90deg,color-mix(in srgb, var(--teal) 30%, transparent) 0 10px,transparent 10px 20px);padding:14px 36px;font-size:24px;font-weight:700;transform:rotate(-1.2deg) translateX(20px)">Insatiable love for poetry</div>
+</div>
+</div>
+</section>
+
+<section id="slip" style="background:var(--deep);color:var(--paper);padding:96px clamp(20px,4vw,56px)">
+<div style="display:flex;flex-wrap:wrap;gap:56px 64px;align-items:flex-start">
+<div style="flex:1 1 440px;min-width:0">
+<div class="t" style="font-size:24px;font-weight:600;color:var(--yellow);letter-spacing:.14em">Spot Slots</div>
+<h2 class="y" style="margin:8px 0 28px;font-size:clamp(44px,6vw,84px);line-height:1;color:var(--yellow);text-transform:uppercase">Two slots, from the audience.</h2>
+<div style="display:flex;flex-direction:column;gap:18px;max-width:560px">
+<div style="display:flex;gap:18px;align-items:flex-start"><span class="y" style="flex:none;width:52px;height:52px;border-radius:50%;background:var(--yellow);color:var(--deep);display:flex;align-items:center;justify-content:center;font-size:24px">1</span><div><div class="t" style="font-size:26px;font-weight:600;line-height:1.1;color:var(--yellow)">Sign up in advance</div><div style="font-size:18px;line-height:1.5">Put a slip in here before the reading, or drop your name in the audience box at the venue.</div></div></div>
+<div style="display:flex;gap:18px;align-items:flex-start"><span class="y" style="flex:none;width:52px;height:52px;border-radius:50%;background:var(--yellow);color:var(--deep);display:flex;align-items:center;justify-content:center;font-size:24px">2</span><div><div class="t" style="font-size:26px;font-weight:600;line-height:1.1;color:var(--yellow)">Show up</div><div style="font-size:18px;line-height:1.5">You still have to be at the reading to be eligible.</div></div></div>
+<div style="display:flex;gap:18px;align-items:flex-start"><span class="y" style="flex:none;width:52px;height:52px;border-radius:50%;background:var(--yellow);color:var(--deep);display:flex;align-items:center;justify-content:center;font-size:24px">3</span><div><div class="t" style="font-size:26px;font-weight:600;line-height:1.1;color:var(--yellow)">The draw happens at the show</div><div style="font-size:18px;line-height:1.5">Two slips are drawn at random from the box. If yours is one of them, you get the stage.</div></div></div>
+</div>
+</div>
+
+<div style="flex:1 1 440px;min-width:0">
+<div style="background:var(--paper);color:var(--deep);border:4px solid var(--yellow);border-radius:22px;padding:32px;box-shadow:8px 8px 0 var(--teal)">
+<h3 class="y" style="margin:0 0 16px;font-size:clamp(30px,3.6vw,46px);line-height:1.05;text-transform:uppercase">Put a slip in.</h3>
+<div style="display:flex;flex-wrap:wrap;gap:24px 28px;align-items:flex-start">
+<div aria-hidden="true" style="position:relative;width:170px;height:120px;flex:none;margin-top:26px">
+<div style="position:absolute;left:24px;bottom:62px;width:46px;height:58px;background:var(--yellow);border:3px solid var(--deep);border-radius:4px;transform:rotate(-12deg)"></div>
+<div style="position:absolute;left:64px;bottom:66px;width:46px;height:60px;background:var(--mist);border:3px solid var(--deep);border-radius:4px;transform:rotate(9deg)"></div>
+<div style="position:absolute;left:0;right:0;bottom:0;height:76px;background:var(--teal);border:4px solid var(--deep);border-radius:10px;box-shadow:5px 5px 0 var(--deep);display:flex;flex-direction:column;align-items:center;justify-content:center;gap:8px"><span style="width:84px;height:9px;background:var(--deep);border-radius:5px"></span><span class="y" style="font-size:15px;letter-spacing:.08em">AUDIENCE BOX</span></div>
+</div>
+<div style="flex:1 1 220px;min-width:0">
+<div data-if="slipOpen" style="display:contents">
+<form data-form="slip" style="display:flex;flex-direction:column;gap:10px">
+<label for="slipname" class="t" style="font-size:18px;font-weight:600;letter-spacing:.1em">Your name</label>
+<input id="slipname" name="name" type="text" maxlength="40" autocomplete="off" style="box-sizing:border-box;width:100%;background:#fff;border:3px solid var(--deep);border-radius:8px;padding:10px 12px;font-family:'Figtree',sans-serif;font-size:17px;color:var(--deep)">
+<label for="slipcontact" class="t" style="font-size:18px;font-weight:600;letter-spacing:.1em">Instagram handle or email</label>
+<input id="slipcontact" name="contact" type="text" maxlength="60" autocomplete="off" style="box-sizing:border-box;width:100%;background:#fff;border:3px solid var(--deep);border-radius:8px;padding:10px 12px;font-family:'Figtree',sans-serif;font-size:17px;color:var(--deep)">
+<div data-if="slipErr" style="display:contents" hidden><div class="se" style="font-size:14px;color:var(--alert)">Add your name so we can write your slip.</div></div>
+<button type="submit" class="btn t" style="align-self:flex-start;background:var(--yellow);color:var(--deep);border:3px solid var(--deep);border-radius:12px;padding:6px 24px;font-size:24px;font-weight:600;box-shadow:4px 4px 0 var(--deep)">Put a slip in</button>
+</form>
+</div>
+<div data-if="slipIn" style="display:contents" hidden>
+<div aria-live="polite">
+<div class="drop" style="background:var(--yellow);border:3px solid var(--deep);border-radius:8px;padding:14px 20px;box-shadow:5px 5px 0 var(--deep);transform:rotate(-2deg)">
+<div class="t" style="font-size:18px;font-weight:600;letter-spacing:.12em">Your slip is in the box</div>
+<div class="y" style="margin-top:2px;font-size:36px;line-height:1.05;overflow-wrap:anywhere"><span data-bind="slipNameShow"></span></div>
+</div>
+<p style="margin:16px 0 10px;font-size:16px;line-height:1.5">Now come to the reading. The draw happens at the show, and you need to be there to be eligible.</p>
+<button type="button" data-act="slip-back" class="se" style="background:transparent;border:0;padding:8px 0;font-size:15px;text-decoration:underline;color:var(--deep);cursor:pointer">take my slip back</button>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</section>
+
+<section style="padding:104px clamp(20px,4vw,56px) 112px;background:var(--mist);border-bottom:3px solid var(--deep)">
+<div style="display:flex;flex-wrap:wrap;gap:48px 64px;align-items:flex-start">
+<div style="flex:1 1 320px;min-width:0">
+<div class="cv" style="display:inline-block;font-size:30px;line-height:1;color:var(--dark);transform:rotate(-2deg)">good to know</div>
+<h2 class="an" style="margin:6px 0 16px;font-size:clamp(44px,5.6vw,80px);line-height:.95;text-transform:uppercase">Questions</h2>
+<p style="margin:0;max-width:340px;font-size:19px;line-height:1.55">Still wondering? Message us on Instagram.</p>
+<a href="https://www.instagram.com/people_of_the_verse/" class="pm" style="display:inline-block;margin-top:16px;font-size:24px;border-bottom:4px solid var(--teal);padding:4px 0">@people_of_the_verse ↗</a>
+</div>
+<div style="flex:2 1 520px;min-width:0;display:flex;flex-direction:column;gap:16px;max-width:760px">
+<template data-tpl="faqs" data-as="f">
+<div style="background:#fff;border:3px solid var(--deep);box-shadow:5px 5px 0 var(--deep)">
+<button type="button" data-act="faq" data-i="{{ f.i }}" aria-expanded="{{ f.expanded }}" style="width:100%;display:flex;align-items:center;justify-content:space-between;gap:16px;background:transparent;border:0;margin:0;padding:18px 22px;text-align:left;cursor:pointer;color:var(--deep)"><span class="an" style="font-size:26px;line-height:1.1;text-transform:uppercase">{{ f.q }}</span><span class="bu" style="flex:none;width:36px;height:36px;border:3px solid var(--deep);background:var(--yellow);display:flex;align-items:center;justify-content:center;font-size:18px">{{ f.mark }}</span></button>
+<sc-if value="{{ f.open }}" hint-placeholder-val="{{ false }}"><div style="padding:0 22px 20px;font-size:18px;line-height:1.6">{{ f.a }}</div></sc-if>
+</div>
+</template><div data-list="faqs" style="display:contents"></div>
+</div>
+</div>
+</section>
+
+<section style="padding:96px clamp(20px,4vw,56px)">
+<div style="display:flex;flex-wrap:wrap;align-items:center;justify-content:space-between;gap:28px 48px;background:var(--yellow);border:3px solid var(--deep);box-shadow:8px 8px 0 var(--deep);padding:40px clamp(24px,4vw,56px);transform:rotate(-.6deg)">
+<div class="an" style="max-width:640px;font-size:clamp(34px,4.6vw,60px);line-height:1;text-transform:uppercase">Show up for others and we show up for you.</div>
+<a href="events.html" class="bu btn" style="background:var(--deep);color:var(--yellow);border:3px solid var(--deep);padding:14px 24px;font-size:16px;letter-spacing:.06em;box-shadow:4px 4px 0 var(--teal)">SEE THE NEXT READING →</a>
+</div>
+</section>
+
+<footer class="torn-t" style="background:var(--deep);color:var(--paper);padding:112px clamp(20px,4vw,56px) 48px">
+<p style="margin:0;max-width:640px;font-size:21px;line-height:1.6">Let&rsquo;s build this community together, not just as performers, but also as listeners. See you at our next event! Happy poetry to you!</p>
+<div style="margin-top:44px;display:flex;flex-wrap:wrap;align-items:center;justify-content:space-between;gap:28px 40px">
+<div class="pm" style="font-size:34px;line-height:1.25;transform:rotate(-2deg)"><span style="color:var(--yellow)">Feel it. Like it. Share it.</span><br>Because poetry belongs to everyone.</div>
+<div style="position:relative;display:flex;align-items:center;gap:18px;background:var(--paper);color:var(--deep);padding:22px 22px 16px;transform:rotate(2deg);box-shadow:5px 5px 0 var(--teal)"><span aria-hidden="true" class="tape" style="position:absolute;left:50%;top:-12px;width:70px;height:22px;margin-left:-35px;background:color-mix(in srgb, var(--yellow) 90%, transparent);transform:rotate(-4deg)"></span><span class="an" style="flex:none;width:80px;height:80px;border:3px solid var(--deep);display:flex;align-items:center;justify-content:center;font-size:24px">QR</span><span style="font-size:16px;line-height:1.45"><strong style="font-size:19px">Been to a reading?</strong><br>Scan to share feedback or a testimonial.</span></div>
+</div>
+<div class="se" style="margin-top:48px;display:flex;flex-wrap:wrap;align-items:center;gap:10px 28px;font-size:16px;letter-spacing:.06em;text-transform:uppercase;color:var(--yellow)"><a href="events.html" style="padding:8px 0">Events</a><a href="fundraisers.html" style="padding:8px 0">Fundraisers</a><a href="mag.html" style="padding:8px 0">PoV Mag</a><a href="team.html" style="padding:8px 0">Team</a><a href="magnets.html" style="padding:8px 0">Word magnets</a><a href="perform.html" style="padding:8px 0">Perform at PoV</a><a href="https://www.instagram.com/people_of_the_verse/" style="padding:8px 0">Instagram ↗</a><a href="#" data-href="links.youtube" style="padding:8px 0">YouTube <span data-yt>[link soon]</span></a></div>
+<div style="margin-top:20px;display:flex;align-items:center;gap:12px;color:var(--paper)" class="se"><img src="assets/img/logo.png" alt="" style="width:44px;height:44px;object-fit:cover;border:3px solid #fff">People of the Verse · Bangalore</div>
+</footer>
+
+</div>
+</div>
+<div class="view-m">
+<div id="top-m" style="width:100%;overflow:hidden;color:var(--deep);font-family:'Figtree',sans-serif;background-color:var(--paper);background-image:linear-gradient(color-mix(in srgb, var(--teal) 16%, transparent) 1px,transparent 1px),linear-gradient(90deg,color-mix(in srgb, var(--teal) 16%, transparent) 1px,transparent 1px);background-size:28px 28px">
+<header style="padding:18px 20px 0">
+<div style="display:flex;align-items:center;justify-content:space-between;gap:12px">
+<a href="index.html" style="position:relative;display:flex;align-items:center;gap:12px;transform:rotate(-1.5deg)">
+<span aria-hidden="true" class="tape" style="position:absolute;left:-10px;top:-8px;width:40px;height:16px;background:color-mix(in srgb, var(--yellow) 85%, transparent);transform:rotate(-30deg);z-index:2"></span>
+<img src="assets/img/logo.png" alt="People of the Verse logo" style="width:56px;height:56px;object-fit:cover;border:4px solid #fff;box-shadow:2px 3px 0 color-mix(in srgb, var(--deep) 35%, transparent)">
+<span class="an" style="font-size:22px;letter-spacing:.02em;text-transform:uppercase;line-height:1">People of<br>the Verse</span>
+</a>
+<button type="button" data-act="menu" aria-expanded="false" class="bu btn" style="min-height:48px;min-width:96px;background:var(--deep);color:var(--paper);border:0;border-radius:4px;padding:0 16px;font-size:14px;letter-spacing:.08em;text-shadow:-1px -1px 0 rgba(0,0,0,.35),1px 1px 0 rgba(255,255,255,.2)">MENU</button>
+</div>
+<div data-if="menuOpen" style="display:contents" hidden>
+<nav style="display:flex;flex-direction:column;gap:10px;padding:16px 0 4px">
+<a href="events.html" class="dy">EVENTS</a>
+<a href="fundraisers.html" class="dy">FUNDRAISERS</a>
+<a href="mag.html" class="dy">POV MAG</a>
+<a href="team.html" class="dy">TEAM</a>
+<a href="magnets.html" class="dy">WORD MAGNETS</a>
+<a href="perform.html" class="bu btn" style="display:block;text-align:center;background:var(--yellow);color:var(--deep);border:3px solid var(--deep);border-radius:4px;padding:12px 18px;font-size:15px;letter-spacing:.08em;box-shadow:4px 4px 0 var(--deep)">PERFORM AT POV</a>
+</nav>
+</div>
+</header>
+<section style="padding:36px 20px 52px"><div class="se" style="display:inline-block;background:#fff;border:2px solid var(--deep);padding:6px 12px;font-size:13px;letter-spacing:.06em;text-transform:uppercase;transform:rotate(-1.5deg);box-shadow:3px 3px 0 var(--deep)">For poets</div><h1 class="an" style="margin:22px 0 0;font-size:80px;line-height:.9;text-transform:uppercase">How to perform <span style="display:inline-block;background:var(--yellow);padding:0 .1em;transform:rotate(-2deg);box-shadow:5px 6px 0 var(--deep)">at PoV</span></h1><p style="margin:26px 0 24px;font-size:19px;line-height:1.5;font-weight:500">We want to build a community of listeners who show up for each other. If you would like to perform, here is how.</p><a href="#slip-m" class="btn br" style="display:inline-block;background:var(--yellow);border:3px solid var(--deep);border-radius:999px;padding:15px 26px;font-size:17px;font-weight:800;box-shadow:4px 4px 0 var(--deep)">Put a slip in ↓</a></section>
+<section style="padding:56px 20px 64px;background:var(--teal);border-top:3px solid var(--deep);border-bottom:3px solid var(--deep);background-image:radial-gradient(color-mix(in srgb, var(--deep) 22%, transparent) 2px,transparent 2px);background-size:22px 22px"><h2 class="an" style="margin:0 0 40px;font-size:48px;line-height:.95;text-transform:uppercase;color:var(--paper);text-shadow:3px 3px 0 var(--deep)">Four ways to the mic.</h2><div style="display:flex;flex-direction:column;gap:36px"><div style="position:relative;background-color:#fff;background-image:repeating-linear-gradient(transparent 0 31px,color-mix(in srgb, var(--teal) 55%, transparent) 31px 32px);border:2px solid var(--deep);box-shadow:5px 5px 0 var(--deep);padding:42px 20px 22px;transform:rotate(-1.5deg)"><span aria-hidden="true" style="position:absolute;left:50%;top:-12px;margin-left:-13px;width:26px;height:26px;border-radius:50%;background:var(--yellow);border:3px solid var(--deep)"></span><div class="ab" style="font-size:60px;line-height:.9;color:var(--teal)">1</div><div class="an" style="margin:8px 0 6px;font-size:26px;line-height:1.05;text-transform:uppercase">Attend our events each month</div><div class="cv" style="font-size:24px;line-height:32px">Come to our monthly readings. Entry is free.</div><a href="events.html" class="se" style="display:inline-block;margin-top:10px;font-size:14px;border-bottom:3px solid var(--teal);padding:10px 0 4px">See the next reading →</a></div><div style="position:relative;background-color:var(--paper);background-image:repeating-linear-gradient(transparent 0 31px,color-mix(in srgb, var(--teal) 55%, transparent) 31px 32px);border:2px solid var(--deep);box-shadow:5px 5px 0 var(--deep);padding:42px 20px 22px;transform:rotate(1.2deg)"><span aria-hidden="true" style="position:absolute;left:50%;top:-12px;margin-left:-13px;width:26px;height:26px;border-radius:50%;background:var(--yellow);border:3px solid var(--deep)"></span><div class="ab" style="font-size:60px;line-height:.9;color:var(--teal)">2</div><div class="an" style="margin:8px 0 6px;font-size:26px;line-height:1.05;text-transform:uppercase">Be incredible listeners</div><div class="cv" style="font-size:24px;line-height:32px">Give every poet your full attention.</div></div><div style="position:relative;background-color:#fff;background-image:repeating-linear-gradient(transparent 0 31px,color-mix(in srgb, var(--teal) 55%, transparent) 31px 32px);border:2px solid var(--deep);box-shadow:5px 5px 0 var(--deep);padding:42px 20px 22px;transform:rotate(-1deg)"><span aria-hidden="true" style="position:absolute;left:50%;top:-12px;margin-left:-13px;width:26px;height:26px;border-radius:50%;background:var(--yellow);border:3px solid var(--deep)"></span><div class="ab" style="font-size:60px;line-height:.9;color:var(--teal)">3</div><div class="an" style="margin:8px 0 6px;font-size:26px;line-height:1.05;text-transform:uppercase">Encourage fellow poets</div><div class="cv" style="font-size:24px;line-height:32px">Show up and cheer them on.</div></div><div style="position:relative;background-color:var(--yellow);background-image:repeating-linear-gradient(transparent 0 31px,color-mix(in srgb, var(--teal) 55%, transparent) 31px 32px);border:2px solid var(--deep);box-shadow:5px 5px 0 var(--deep);padding:42px 20px 22px;transform:rotate(1.6deg)"><span aria-hidden="true" style="position:absolute;left:50%;top:-12px;margin-left:-13px;width:26px;height:26px;border-radius:50%;background:var(--yellow);border:3px solid var(--deep)"></span><div class="ab" style="font-size:60px;line-height:.9;color:var(--teal)">4</div><div class="an" style="margin:8px 0 6px;font-size:26px;line-height:1.05;text-transform:uppercase">Sign up for Spot Slots</div><div class="cv" style="font-size:24px;line-height:32px">Put your name in our audience box. If it gets picked, you get the stage.</div><a href="#slip-m" class="se" style="display:inline-block;margin-top:10px;font-size:14px;border-bottom:3px solid var(--teal);padding:10px 0 4px">Put a slip in →</a></div></div></section>
+<section style="padding:56px 20px 60px"><div class="cv" style="display:inline-block;font-size:26px;line-height:1;color:var(--dark);transform:rotate(-2deg)">the short list</div><h2 class="an" style="margin:4px 0 12px;font-size:48px;line-height:.95;text-transform:uppercase">What we look for</h2><p style="margin:0 0 28px;font-size:18px;line-height:1.55;font-weight:500">Each month we pick our line-up of performers based on:</p><div style="display:flex;flex-direction:column;align-items:flex-start;gap:16px"><div class="tape" style="background-color:var(--yellow);background-image:repeating-linear-gradient(90deg,color-mix(in srgb, var(--deep) 10%, transparent) 0 10px,transparent 10px 20px);padding:12px 28px;font-size:19px;font-weight:700;transform:rotate(-1.5deg);">Quality of writing</div><div class="tape" style="background-color:#fff;background-image:repeating-linear-gradient(45deg,color-mix(in srgb, var(--teal) 30%, transparent) 0 10px,transparent 10px 20px);padding:12px 28px;font-size:19px;font-weight:700;transform:rotate(1deg) translateX(20px);">Authenticity</div><div class="tape" style="background-color:var(--mist);background-image:radial-gradient(color-mix(in srgb, var(--deep) 25%, transparent) 3px,transparent 3px);background-size:18px 18px;padding:12px 28px;font-size:19px;font-weight:700;transform:rotate(-.8deg) translateX(6px);">New and refreshing perspectives</div><div class="tape" style="background-color:var(--yellow);background-image:repeating-linear-gradient(-45deg,color-mix(in srgb, var(--deep) 10%, transparent) 0 10px,transparent 10px 20px);padding:12px 28px;font-size:19px;font-weight:700;transform:rotate(1.2deg);max-width:340px;">Respect for everyone&rsquo;s agency, religion, caste, gender, belief systems</div><div class="tape" style="background-color:#fff;background-image:repeating-linear-gradient(90deg,color-mix(in srgb, var(--teal) 30%, transparent) 0 10px,transparent 10px 20px);padding:12px 28px;font-size:19px;font-weight:700;transform:rotate(-1.2deg) translateX(14px);">Insatiable love for poetry</div></div></section>
+<section id="slip-m" style="background:var(--deep);color:var(--paper);padding:56px 20px 60px"><div class="t" style="font-size:20px;font-weight:600;color:var(--yellow);letter-spacing:.14em">Spot Slots</div><h2 class="y" style="margin:6px 0 26px;font-size:42px;line-height:1;color:var(--yellow);text-transform:uppercase">Two slots, from the audience.</h2><div style="display:flex;flex-direction:column;gap:20px"><div style="display:flex;gap:14px;align-items:flex-start"><span class="y" style="flex:none;width:46px;height:46px;border-radius:50%;background:var(--yellow);color:var(--deep);display:flex;align-items:center;justify-content:center;font-size:22px">1</span><div><div class="t" style="font-size:24px;font-weight:600;line-height:1.1;color:var(--yellow)">Sign up in advance</div><div style="font-size:17px;line-height:1.5">Put a slip in here before the reading, or drop your name in the audience box at the venue.</div></div></div><div style="display:flex;gap:14px;align-items:flex-start"><span class="y" style="flex:none;width:46px;height:46px;border-radius:50%;background:var(--yellow);color:var(--deep);display:flex;align-items:center;justify-content:center;font-size:22px">2</span><div><div class="t" style="font-size:24px;font-weight:600;line-height:1.1;color:var(--yellow)">Show up</div><div style="font-size:17px;line-height:1.5">You still have to be at the reading to be eligible.</div></div></div><div style="display:flex;gap:14px;align-items:flex-start"><span class="y" style="flex:none;width:46px;height:46px;border-radius:50%;background:var(--yellow);color:var(--deep);display:flex;align-items:center;justify-content:center;font-size:22px">3</span><div><div class="t" style="font-size:24px;font-weight:600;line-height:1.1;color:var(--yellow)">The draw happens at the show</div><div style="font-size:17px;line-height:1.5">Two slips are drawn at random from the box. If yours is one of them, you get the stage.</div></div></div></div><div style="margin-top:36px;background:var(--paper);color:var(--deep);border:4px solid var(--yellow);border-radius:20px;padding:24px 20px;box-shadow:6px 6px 0 var(--teal)">
+<div class="t" style="font-size:20px;font-weight:600;letter-spacing:.14em;color:var(--dark)">Spot Slots</div>
+<h3 class="y" style="margin:2px 0 10px;font-size:34px;line-height:1.05;text-transform:uppercase">Put a slip in.</h3>
+<p style="margin:0 0 18px;font-size:16px;line-height:1.55">Two places at every reading go to poets from the audience. Sign up in advance and put your slip in the box. The draw happens live at the show, and you need to be in the room to take the stage.</p>
+<div aria-hidden="true" style="position:relative;width:170px;height:112px;margin:24px auto 22px">
+<div style="position:absolute;left:24px;bottom:58px;width:46px;height:58px;background:var(--yellow);border:3px solid var(--deep);border-radius:4px;transform:rotate(-12deg)"></div>
+<div style="position:absolute;left:64px;bottom:62px;width:46px;height:60px;background:var(--mist);border:3px solid var(--deep);border-radius:4px;transform:rotate(9deg)"></div>
+<div style="position:absolute;left:0;right:0;bottom:0;height:72px;background:var(--teal);border:4px solid var(--deep);border-radius:10px;box-shadow:5px 5px 0 var(--deep);display:flex;flex-direction:column;align-items:center;justify-content:center;gap:8px"><span style="width:84px;height:9px;background:var(--deep);border-radius:5px"></span><span class="y" style="font-size:15px;letter-spacing:.08em">AUDIENCE BOX</span></div>
+</div>
+<div data-if="slipOpen" style="display:contents">
+<form data-form="slip" style="display:flex;flex-direction:column;gap:8px">
+<label for="slipname-m" class="t" style="font-size:18px;font-weight:600;letter-spacing:.1em">Your name</label>
+<input id="slipname-m" name="name" type="text" maxlength="40" autocomplete="off" style="box-sizing:border-box;width:100%;min-height:48px;background:#fff;border:3px solid var(--deep);border-radius:8px;padding:10px 12px;font-family:'Figtree',sans-serif;font-size:17px;color:var(--deep)">
+<label for="slipcontact-m" class="t" style="margin-top:4px;font-size:18px;font-weight:600;letter-spacing:.1em">Instagram handle or email</label>
+<input id="slipcontact-m" name="contact" type="text" maxlength="60" autocomplete="off" style="box-sizing:border-box;width:100%;min-height:48px;background:#fff;border:3px solid var(--deep);border-radius:8px;padding:10px 12px;font-family:'Figtree',sans-serif;font-size:17px;color:var(--deep)">
+<div data-if="slipErr" style="display:contents" hidden><div class="se" style="font-size:14px;color:var(--alert)">Add your name so we can write your slip.</div></div>
+<button type="submit" class="btn t" style="margin-top:8px;min-height:52px;background:var(--yellow);color:var(--deep);border:3px solid var(--deep);border-radius:12px;padding:6px 24px;font-size:24px;font-weight:600;box-shadow:4px 4px 0 var(--deep)">Put a slip in</button>
+</form>
+</div>
+<div data-if="slipIn" style="display:contents" hidden>
+<div aria-live="polite">
+<div class="drop" style="background:var(--yellow);border:3px solid var(--deep);border-radius:8px;padding:14px 18px;box-shadow:5px 5px 0 var(--deep);transform:rotate(-2deg)">
+<div class="t" style="font-size:18px;font-weight:600;letter-spacing:.12em">Your slip is in the box</div>
+<div class="y" style="margin-top:2px;font-size:34px;line-height:1.05;overflow-wrap:anywhere"><span data-bind="slipNameShow"></span></div>
+</div>
+<p style="margin:16px 0 6px;font-size:16px;line-height:1.5">Now come to the reading. The draw happens at the show, and you need to be there to be eligible.</p>
+<button type="button" data-act="slip-back" class="se" style="min-height:44px;background:transparent;border:0;padding:8px 0;font-size:15px;text-decoration:underline;color:var(--deep);cursor:pointer">take my slip back</button>
+</div>
+</div>
+</div>
+</section>
+<section style="padding:56px 20px 64px;background:var(--mist);border-bottom:3px solid var(--deep)"><div class="cv" style="display:inline-block;font-size:26px;line-height:1;color:var(--dark);transform:rotate(-2deg)">good to know</div><h2 class="an" style="margin:6px 0 14px;font-size:52px;line-height:.95;text-transform:uppercase">Questions</h2><p style="margin:0 0 6px;font-size:17px;line-height:1.5">Still wondering? Message us on Instagram.</p><a href="https://www.instagram.com/people_of_the_verse/" class="pm" style="display:inline-block;margin:0 0 26px;font-size:21px;border-bottom:3px solid var(--teal);padding:12px 0 4px">@people_of_the_verse ↗</a><div style="display:flex;flex-direction:column;gap:16px"><template data-tpl="faqs" data-as="f"><div style="background:#fff;border:3px solid var(--deep);box-shadow:4px 4px 0 var(--deep)"><button type="button" data-act="faq" data-i="{{ f.i }}" aria-expanded="{{ f.expanded }}" style="width:100%;min-height:56px;display:flex;align-items:center;justify-content:space-between;gap:12px;background:transparent;border:0;margin:0;padding:14px 16px;text-align:left;cursor:pointer;color:var(--deep)"><span class="an" style="font-size:22px;line-height:1.1;text-transform:uppercase">{{ f.q }}</span><span class="bu" style="flex:none;width:34px;height:34px;border:3px solid var(--deep);background:var(--yellow);display:flex;align-items:center;justify-content:center;font-size:18px">{{ f.mark }}</span></button><sc-if value="{{ f.open }}" hint-placeholder-val="{{ false }}"><div style="padding:0 16px 18px;font-size:17px;line-height:1.55">{{ f.a }}</div></sc-if></div></template><div data-list="faqs" style="display:contents"></div></div></section>
+<section style="padding:56px 20px 64px"><div style="background:var(--yellow);border:3px solid var(--deep);box-shadow:6px 6px 0 var(--deep);padding:28px 20px;transform:rotate(-.6deg)"><div class="an" style="font-size:40px;line-height:1;text-transform:uppercase">Show up for others and we show up for you.</div><a href="events.html" class="bu btn" style="display:block;margin-top:22px;text-align:center;background:var(--deep);color:var(--yellow);border:3px solid var(--deep);padding:14px 16px;font-size:14px;letter-spacing:.06em;box-shadow:4px 4px 0 var(--teal)">SEE THE NEXT READING →</a></div></section>
+<footer class="torn-t" style="margin-top:-10px;background:var(--deep);color:var(--paper);padding:80px 20px 36px">
+<h2 class="an" style="margin:0;font-size:46px;line-height:1;text-transform:uppercase;color:var(--yellow)">Show up for others and we show up for you.</h2>
+<p style="margin:20px 0 0;font-size:18px;line-height:1.6">Let&rsquo;s build this community together, not just as performers, but also as listeners. See you at our next event! Happy poetry to you!</p>
+<div class="pm" style="margin-top:32px;font-size:28px;line-height:1.25;transform:rotate(-2deg)"><span style="color:var(--yellow)">Feel it. Like it. Share it.</span><br>Because poetry belongs to everyone.</div>
+<div style="position:relative;margin-top:36px;display:flex;align-items:center;gap:14px;background:var(--paper);color:var(--deep);padding:20px 16px 14px;transform:rotate(1.5deg);box-shadow:4px 4px 0 var(--teal)"><span aria-hidden="true" class="tape" style="position:absolute;left:50%;top:-10px;width:60px;height:20px;margin-left:-30px;background:color-mix(in srgb, var(--yellow) 90%, transparent);transform:rotate(-4deg)"></span><span class="an" style="flex:none;width:68px;height:68px;border:3px solid var(--deep);display:flex;align-items:center;justify-content:center;font-size:20px">QR</span><span style="font-size:15px;line-height:1.4"><strong style="font-size:17px">Been to a reading?</strong><br>Scan to share feedback or a testimonial.</span></div>
+<div class="se" style="margin-top:36px;display:flex;flex-wrap:wrap;gap:0 22px;font-size:14px;letter-spacing:.06em;text-transform:uppercase;color:var(--yellow)"><a href="events.html" style="padding:12px 0">Events</a><a href="fundraisers.html" style="padding:12px 0">Fundraisers</a><a href="mag.html" style="padding:12px 0">PoV Mag</a><a href="team.html" style="padding:12px 0">Team</a><a href="magnets.html" style="padding:12px 0">Word magnets</a><a href="perform.html" style="padding:12px 0">Perform at PoV</a><a href="https://www.instagram.com/people_of_the_verse/" style="padding:12px 0">Instagram ↗</a><a href="#" data-href="links.youtube" style="padding:12px 0">YouTube <span data-yt>[link soon]</span></a></div>
+<div class="se" style="margin-top:16px;display:flex;align-items:center;gap:10px;font-size:14px"><img src="assets/img/logo.png" alt="" style="width:40px;height:40px;object-fit:cover;border:3px solid #fff">People of the Verse · Bangalore</div>
+</footer>
+</div>
+</div>
+<script src="assets/js/content.js"></script>
+<script src="assets/js/site.js"></script>
+</body>
+</html>

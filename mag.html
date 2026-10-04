@@ -1,0 +1,211 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>People of the Verse: PoV Mag</title>
+<meta name="theme-color" content="#289F88">
+<link rel="icon" href="assets/img/logo.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Anton&family=Abril+Fatface&family=Special+Elite&family=Bungee&family=Permanent+Marker&family=Caveat:wght@700&family=Figtree:wght@400;500;600;700&family=Bricolage+Grotesque:opsz,wght@12..96,400..800&family=DM+Mono:wght@400;500&family=Yatra+One&family=Teko:wght@500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="assets/css/site.css">
+<style>
+/* desktop layout (from the desktop design) */
+.view-d a{text-decoration:none;color:inherit}
+.view-d .an{font-family:'Anton',sans-serif;font-weight:400}
+.view-d .ab{font-family:'Abril Fatface',serif;font-weight:400}
+.view-d .se{font-family:'Special Elite',monospace}
+.view-d .bu{font-family:'Bungee',sans-serif}
+.view-d .pm{font-family:'Permanent Marker',cursive}
+.view-d .cv{font-family:'Caveat',cursive;font-weight:700}
+.view-d .br{font-family:'Bricolage Grotesque',sans-serif}
+.view-d .y{font-family:'Yatra One',serif;font-weight:400}
+.view-d .t{font-family:'Teko',sans-serif;text-transform:uppercase;letter-spacing:.06em}
+.view-d .dy{display:inline-block;background:var(--deep);color:var(--paper);border-radius:4px;padding:8px 16px;font-family:'Bungee',sans-serif;font-size:15px;letter-spacing:.08em;text-shadow:-1px -1px 0 rgba(0,0,0,.35),1px 1px 0 rgba(255,255,255,.2)}
+.view-d .dy.on{background:var(--teal);color:var(--deep);text-shadow:none}
+.view-d .g4{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:48px 28px}
+.view-d .btn{transition:transform .12s,box-shadow .12s;cursor:pointer}
+.view-d .btn:hover{transform:translate(3px,3px);box-shadow:1px 1px 0 var(--deep)!important}
+.view-d .btn:focus-visible,.view-d input:focus-visible,.view-d textarea:focus-visible,.view-d button:focus-visible,.view-d a:focus-visible{outline:3px solid var(--deep);outline-offset:3px}
+.view-d .tape{clip-path:polygon(0 0,3% 12%,0 25%,3% 38%,0 50%,3% 62%,0 75%,3% 88%,0 100%,100% 100%,97% 88%,100% 75%,97% 62%,100% 50%,97% 38%,100% 25%,97% 12%,100% 0)}
+.view-d .torn-t{clip-path:polygon(0 14px,3% 4px,7% 12px,11% 2px,16% 11px,21% 0,26% 10px,31% 3px,36% 13px,41% 2px,46% 10px,52% 0,57% 12px,62% 3px,67% 11px,72% 1px,77% 13px,82% 4px,87% 11px,92% 0,96% 10px,100% 3px,100% 100%,0 100%)}
+@keyframes drop{from{transform:translateY(-46px);opacity:0}to{transform:translateY(0);opacity:1}}
+.view-d .drop{animation:drop .5s ease-out both}
+@media(prefers-reduced-motion:reduce){.view-d .btn,.view-d .drop{transition:none;animation:none}}
+@media(max-width:1000px){.view-d .g4{grid-template-columns:repeat(2,minmax(0,1fr))}}
+@media(max-width:600px){.view-d .g4{grid-template-columns:minmax(0,1fr)}}
+/* mobile layout (from the mobile design) */
+.view-m a{text-decoration:none;color:inherit}
+.view-m .an{font-family:'Anton',sans-serif;font-weight:400}
+.view-m .ab{font-family:'Abril Fatface',serif;font-weight:400}
+.view-m .se{font-family:'Special Elite',monospace}
+.view-m .bu{font-family:'Bungee',sans-serif}
+.view-m .pm{font-family:'Permanent Marker',cursive}
+.view-m .cv{font-family:'Caveat',cursive;font-weight:700}
+.view-m .br{font-family:'Bricolage Grotesque',sans-serif}
+.view-m .dm{font-family:'DM Mono',monospace}
+.view-m .y{font-family:'Yatra One',serif;font-weight:400}
+.view-m .t{font-family:'Teko',sans-serif;text-transform:uppercase;letter-spacing:.06em}
+.view-m .dy{display:block;background:var(--deep);color:var(--paper);border-radius:4px;padding:12px 16px;font-family:'Bungee',sans-serif;font-size:15px;letter-spacing:.08em;text-shadow:-1px -1px 0 rgba(0,0,0,.35),1px 1px 0 rgba(255,255,255,.2)}
+.view-m .dy.on{background:var(--teal);color:var(--deep);text-shadow:none}
+.view-m .btn{transition:transform .12s,box-shadow .12s;cursor:pointer}
+.view-m .btn:hover{transform:translate(3px,3px);box-shadow:1px 1px 0 var(--deep)!important}
+.view-m .btn:focus-visible,.view-m input:focus-visible,.view-m button:focus-visible,.view-m a:focus-visible{outline:3px solid var(--deep);outline-offset:3px}
+.view-m .tape{clip-path:polygon(0 0,3% 12%,0 25%,3% 38%,0 50%,3% 62%,0 75%,3% 88%,0 100%,100% 100%,97% 88%,100% 75%,97% 62%,100% 50%,97% 38%,100% 25%,97% 12%,100% 0)}
+.view-m .torn-t{clip-path:polygon(0 14px,3% 4px,7% 12px,11% 2px,16% 11px,21% 0,26% 10px,31% 3px,36% 13px,41% 2px,46% 10px,52% 0,57% 12px,62% 3px,67% 11px,72% 1px,77% 13px,82% 4px,87% 11px,92% 0,96% 10px,100% 3px,100% 100%,0 100%)}
+@keyframes tick{from{transform:translateX(0)}to{transform:translateX(-50%)}}
+.view-m .ticker{animation:tick 30s linear infinite}
+@keyframes drop{from{transform:translateY(-46px);opacity:0}to{transform:translateY(0);opacity:1}}
+.view-m .drop{animation:drop .5s ease-out both}
+@media(prefers-reduced-motion:reduce){.view-m .ticker,.view-m .drop{animation:none}
+.view-m .btn{transition:none}}
+</style>
+</head>
+<body data-page="mag">
+<div class="view-d">
+<div id="top" style="width:100%;overflow:hidden;color:var(--deep);font-family:'Figtree',sans-serif;background-color:var(--paper);background-image:linear-gradient(color-mix(in srgb, var(--teal) 16%, transparent) 1px,transparent 1px),linear-gradient(90deg,color-mix(in srgb, var(--teal) 16%, transparent) 1px,transparent 1px);background-size:28px 28px">
+
+<header style="padding:28px clamp(20px,4vw,56px) 0">
+<div style="display:flex;flex-wrap:wrap;align-items:center;justify-content:space-between;gap:20px 28px">
+<a href="index.html" style="position:relative;display:flex;align-items:center;gap:16px;transform:rotate(-1.5deg)">
+<span aria-hidden="true" class="tape" style="position:absolute;left:-14px;top:-10px;width:56px;height:20px;background:color-mix(in srgb, var(--yellow) 85%, transparent);transform:rotate(-30deg);z-index:2"></span>
+<img src="assets/img/logo.png" alt="People of the Verse logo" style="width:76px;height:76px;object-fit:cover;border:6px solid #fff;box-shadow:3px 4px 0 color-mix(in srgb, var(--deep) 35%, transparent)">
+<span class="an" style="font-size:34px;letter-spacing:.02em;text-transform:uppercase;line-height:1">People of the Verse</span>
+</a>
+<nav style="display:flex;flex-wrap:wrap;align-items:center;gap:12px">
+<a href="events.html" class="dy" style="transform:rotate(-1deg)">EVENTS</a>
+<a href="fundraisers.html" class="dy" style="transform:rotate(1deg)">FUNDRAISERS</a>
+<a href="mag.html" class="dy on" style="transform:rotate(-.6deg)">POV MAG</a>
+<a href="team.html" class="dy" style="transform:rotate(1.2deg)">TEAM</a>
+<a href="magnets.html" class="dy" style="transform:rotate(-1deg)">WORD MAGNETS</a>
+<a href="perform.html" class="bu btn" style="background:var(--yellow);color:var(--deep);border:3px solid var(--deep);border-radius:4px;padding:8px 18px;font-size:15px;letter-spacing:.08em;box-shadow:4px 4px 0 var(--deep);transform:rotate(-1.5deg)">PERFORM AT POV</a>
+</nav>
+</div>
+</header>
+
+<section style="padding:72px clamp(20px,4vw,56px) 104px;display:flex;flex-wrap:wrap;gap:64px 72px;align-items:center">
+<div style="flex:1 1 440px;min-width:0">
+<div class="cv" style="display:inline-block;font-size:30px;line-height:1;color:var(--dark);transform:rotate(-2deg)">stapled by hand</div>
+<h1 class="an" style="margin:8px 0 20px;font-size:clamp(64px,10vw,150px);line-height:.9;text-transform:uppercase">PoV <span style="display:inline-block;background:var(--yellow);padding:0 .1em;transform:rotate(-2deg);box-shadow:6px 7px 0 var(--deep)">Mag</span></h1>
+<p style="margin:0 0 28px;max-width:480px;font-size:21px;line-height:1.55;font-weight:500">Poems and pieces from the people of the verse. Read past issues, or send us your own work.</p>
+<div style="display:flex;flex-wrap:wrap;gap:16px"><a href="#" data-href="mag.latest.link" class="bu btn" style="background:var(--yellow);border:3px solid var(--deep);padding:12px 22px;font-size:16px;letter-spacing:.06em;box-shadow:4px 4px 0 var(--deep)">READ THE LATEST ISSUE →</a><a href="#submit" class="bu btn" style="background:#fff;border:3px solid var(--deep);padding:12px 22px;font-size:16px;letter-spacing:.06em;box-shadow:4px 4px 0 var(--deep)">SUBMIT YOUR WORK ↓</a></div>
+</div>
+<div style="flex:1 1 380px;min-width:0;display:flex;justify-content:center">
+<div style="position:relative;width:min(100%,380px);aspect-ratio:3 / 4;background:var(--teal);border:4px solid var(--deep);box-shadow:12px 12px 0 var(--deep);transform:rotate(-3deg);padding:28px;display:flex;flex-direction:column;justify-content:space-between">
+<span aria-hidden="true" style="position:absolute;left:-8px;top:28%;width:30px;height:8px;background:#9aa7a2;border:1px solid var(--deep)"></span><span aria-hidden="true" style="position:absolute;left:-8px;top:68%;width:30px;height:8px;background:#9aa7a2;border:1px solid var(--deep)"></span>
+<div><div class="se" style="font-size:16px;letter-spacing:.1em">ISSUE <span data-p="mag.latest.no">[NO.]</span> · <span data-p="mag.latest.month">[MONTH YEAR]</span></div><div class="ab" style="font-size:clamp(64px,8vw,96px);line-height:.88;color:var(--paper);text-shadow:4px 4px 0 var(--deep)">PoV<br>Mag</div></div>
+<div class="cv" style="background:#fff;border:2px solid var(--deep);padding:8px 12px;font-size:26px;line-height:1.1;transform:rotate(1.5deg)"><span data-p="mag.latest.cover">[COVER LINE FOR THE LATEST ISSUE]</span></div>
+</div>
+</div>
+</section>
+
+<section style="padding:88px clamp(20px,4vw,56px) 112px;background:var(--mist);border-top:3px solid var(--deep);border-bottom:3px solid var(--deep)">
+<div style="display:flex;flex-wrap:wrap;align-items:flex-end;justify-content:space-between;gap:16px 32px;margin-bottom:56px">
+<h2 class="an" style="margin:0;font-size:clamp(44px,6.4vw,92px);line-height:.95;text-transform:uppercase">Past issues</h2>
+<p style="margin:0;max-width:380px;font-size:19px;line-height:1.55">Every issue, one stapled cover at a time.</p>
+</div>
+<div class="g4">
+<a href="#" data-href="mag.past.0.link" style="display:block;transform:rotate(-2deg)"><div style="position:relative;aspect-ratio:3 / 4;background:var(--teal);border:3px solid var(--deep);box-shadow:6px 6px 0 var(--deep);padding:16px;display:flex;flex-direction:column;justify-content:space-between"><span class="ab" style="font-size:40px;line-height:.9;color:var(--paper);text-shadow:2px 2px 0 var(--deep)">PoV<br>Mag</span><span class="se" style="font-size:13px;background:#fff;border:2px solid var(--deep);padding:4px 8px"><span data-p="mag.past.0.theme">[THEME]</span></span></div><div class="cv" style="margin-top:12px;font-size:26px;line-height:1">Issue <span data-p="mag.past.0.no">[NO.]</span></div><div class="se" style="font-size:14px;color:var(--dark)"><span data-p="mag.past.0.month">[MONTH YEAR]</span> · read ↗</div></a>
+<a href="#" data-href="mag.past.1.link" style="display:block;transform:rotate(1.5deg) translateY(14px)"><div style="position:relative;aspect-ratio:3 / 4;background:var(--yellow);border:3px solid var(--deep);box-shadow:6px 6px 0 var(--deep);padding:16px;display:flex;flex-direction:column;justify-content:space-between"><span class="ab" style="font-size:40px;line-height:.9;color:var(--deep)">PoV<br>Mag</span><span class="se" style="font-size:13px;background:#fff;border:2px solid var(--deep);padding:4px 8px"><span data-p="mag.past.1.theme">[THEME]</span></span></div><div class="cv" style="margin-top:12px;font-size:26px;line-height:1">Issue <span data-p="mag.past.1.no">[NO.]</span></div><div class="se" style="font-size:14px;color:var(--dark)"><span data-p="mag.past.1.month">[MONTH YEAR]</span> · read ↗</div></a>
+<a href="#" data-href="mag.past.2.link" style="display:block;transform:rotate(-1deg)"><div style="position:relative;aspect-ratio:3 / 4;background:var(--paper);border:3px solid var(--deep);box-shadow:6px 6px 0 var(--deep);padding:16px;display:flex;flex-direction:column;justify-content:space-between"><span class="ab" style="font-size:40px;line-height:.9;color:var(--teal);-webkit-text-stroke:1.5px var(--deep)">PoV<br>Mag</span><span class="se" style="font-size:13px;background:#fff;border:2px solid var(--deep);padding:4px 8px"><span data-p="mag.past.2.theme">[THEME]</span></span></div><div class="cv" style="margin-top:12px;font-size:26px;line-height:1">Issue <span data-p="mag.past.2.no">[NO.]</span></div><div class="se" style="font-size:14px;color:var(--dark)"><span data-p="mag.past.2.month">[MONTH YEAR]</span> · read ↗</div></a>
+<a href="#" data-href="mag.past.3.link" style="display:block;transform:rotate(2.4deg) translateY(10px)"><div style="position:relative;aspect-ratio:3 / 4;background:var(--deep);border:3px solid var(--deep);box-shadow:6px 6px 0 var(--teal);padding:16px;display:flex;flex-direction:column;justify-content:space-between"><span class="ab" style="font-size:40px;line-height:.9;color:var(--yellow)">PoV<br>Mag</span><span class="se" style="font-size:13px;background:#fff;border:2px solid var(--yellow);padding:4px 8px"><span data-p="mag.past.3.theme">[THEME]</span></span></div><div class="cv" style="margin-top:12px;font-size:26px;line-height:1">Issue <span data-p="mag.past.3.no">[NO.]</span></div><div class="se" style="font-size:14px;color:var(--dark)"><span data-p="mag.past.3.month">[MONTH YEAR]</span> · read ↗</div></a>
+<a href="#" data-href="mag.past.4.link" style="display:block;transform:rotate(1.2deg)"><div style="position:relative;aspect-ratio:3 / 4;background:#fff;border:3px solid var(--deep);box-shadow:6px 6px 0 var(--deep);padding:16px;display:flex;flex-direction:column;justify-content:space-between"><span class="ab" style="font-size:40px;line-height:.9;color:var(--deep)">PoV<br>Mag</span><span class="se" style="font-size:13px;background:var(--yellow);border:2px solid var(--deep);padding:4px 8px"><span data-p="mag.past.4.theme">[THEME]</span></span></div><div class="cv" style="margin-top:12px;font-size:26px;line-height:1">Issue <span data-p="mag.past.4.no">[NO.]</span></div><div class="se" style="font-size:14px;color:var(--dark)"><span data-p="mag.past.4.month">[MONTH YEAR]</span> · read ↗</div></a>
+<a href="#" data-href="mag.past.5.link" style="display:block;transform:rotate(-2.5deg) translateY(12px)"><div style="position:relative;aspect-ratio:3 / 4;background:var(--teal);border:3px solid var(--deep);box-shadow:6px 6px 0 var(--deep);padding:16px;display:flex;flex-direction:column;justify-content:space-between"><span class="ab" style="font-size:40px;line-height:.9;color:var(--paper);text-shadow:2px 2px 0 var(--deep)">PoV<br>Mag</span><span class="se" style="font-size:13px;background:#fff;border:2px solid var(--deep);padding:4px 8px"><span data-p="mag.past.5.theme">[THEME]</span></span></div><div class="cv" style="margin-top:12px;font-size:26px;line-height:1">Issue <span data-p="mag.past.5.no">[NO.]</span></div><div class="se" style="font-size:14px;color:var(--dark)"><span data-p="mag.past.5.month">[MONTH YEAR]</span> · read ↗</div></a>
+<a href="#" data-href="mag.past.6.link" style="display:block;transform:rotate(1.8deg)"><div style="position:relative;aspect-ratio:3 / 4;background:var(--yellow);border:3px solid var(--deep);box-shadow:6px 6px 0 var(--deep);padding:16px;display:flex;flex-direction:column;justify-content:space-between"><span class="ab" style="font-size:40px;line-height:.9;color:var(--deep)">PoV<br>Mag</span><span class="se" style="font-size:13px;background:#fff;border:2px solid var(--deep);padding:4px 8px"><span data-p="mag.past.6.theme">[THEME]</span></span></div><div class="cv" style="margin-top:12px;font-size:26px;line-height:1">Issue <span data-p="mag.past.6.no">[NO.]</span></div><div class="se" style="font-size:14px;color:var(--dark)"><span data-p="mag.past.6.month">[MONTH YEAR]</span> · read ↗</div></a>
+<a href="#" data-href="mag.past.7.link" style="display:block;transform:rotate(-1.4deg) translateY(16px)"><div style="position:relative;aspect-ratio:3 / 4;background:var(--paper);border:3px solid var(--deep);box-shadow:6px 6px 0 var(--deep);padding:16px;display:flex;flex-direction:column;justify-content:space-between"><span class="ab" style="font-size:40px;line-height:.9;color:var(--teal);-webkit-text-stroke:1.5px var(--deep)">PoV<br>Mag</span><span class="se" style="font-size:13px;background:#fff;border:2px solid var(--deep);padding:4px 8px"><span data-p="mag.past.7.theme">[THEME]</span></span></div><div class="cv" style="margin-top:12px;font-size:26px;line-height:1">Issue <span data-p="mag.past.7.no">[NO.]</span></div><div class="se" style="font-size:14px;color:var(--dark)"><span data-p="mag.past.7.month">[MONTH YEAR]</span> · read ↗</div></a>
+</div>
+</section>
+
+<section id="submit" style="padding:104px clamp(20px,4vw,56px) 112px">
+<div style="display:flex;flex-wrap:wrap;gap:56px 64px;align-items:flex-start">
+<div style="flex:1 1 380px;min-width:0">
+<div class="cv" style="display:inline-block;font-size:30px;line-height:1;color:var(--dark);transform:rotate(-2deg)">your words, our pages</div>
+<h2 class="an" style="margin:6px 0 20px;font-size:clamp(44px,5.6vw,80px);line-height:.95;text-transform:uppercase">Submit your work</h2>
+<p style="margin:0 0 32px;max-width:440px;font-size:20px;line-height:1.6">Send us a poem for the next issue of PoV Mag.</p>
+<div style="display:flex;flex-direction:column;gap:20px;max-width:440px">
+<div class="tape" style="background-color:var(--yellow);background-image:repeating-linear-gradient(90deg,color-mix(in srgb, var(--deep) 10%, transparent) 0 10px,transparent 10px 20px);padding:14px 32px;font-size:20px;font-weight:700;transform:rotate(-1.2deg);box-shadow:3px 4px 0 color-mix(in srgb, var(--deep) 25%, transparent)">Open for: <span data-p="mag.submit.dates">[SUBMISSION DATES]</span></div>
+<div class="tape" style="background-color:#fff;background-image:repeating-linear-gradient(45deg,color-mix(in srgb, var(--teal) 30%, transparent) 0 10px,transparent 10px 20px);padding:14px 32px;font-size:20px;font-weight:700;transform:rotate(1deg) translateX(24px)">Theme: <span data-p="mag.submit.theme">[THEME FOR THE NEXT ISSUE]</span></div>
+<div class="tape" style="background-color:var(--mist);background-image:radial-gradient(color-mix(in srgb, var(--deep) 25%, transparent) 3px,transparent 3px);background-size:18px 18px;padding:14px 32px;font-size:20px;font-weight:700;transform:rotate(-.8deg) translateX(10px)">Length: <span data-p="mag.submit.limit">[WORD OR LINE LIMIT]</span></div>
+</div>
+</div>
+<div style="flex:1 1 480px;min-width:0;max-width:640px">
+<div data-if="formOpen" style="display:contents">
+<form data-form="mag" style="position:relative;background:#fff;border:2px solid var(--deep);box-shadow:8px 8px 0 var(--deep);padding:40px 32px 32px;display:flex;flex-direction:column;gap:14px;transform:rotate(.8deg)">
+<span aria-hidden="true" class="tape" style="position:absolute;left:50%;top:-14px;width:110px;height:30px;margin-left:-55px;background:color-mix(in srgb, var(--teal) 80%, transparent);transform:rotate(-2deg)"></span>
+<label for="mname" class="bu" style="font-size:13px;letter-spacing:.12em">YOUR NAME</label>
+<input id="mname" name="name" type="text" autocomplete="off" style="box-sizing:border-box;width:100%;background:var(--paper);border:3px solid var(--deep);padding:12px 14px;font-family:'Special Elite',monospace;font-size:17px;color:var(--deep)">
+<label for="memail" class="bu" style="font-size:13px;letter-spacing:.12em">EMAIL</label>
+<input id="memail" name="email" type="text" autocomplete="off" style="box-sizing:border-box;width:100%;background:var(--paper);border:3px solid var(--deep);padding:12px 14px;font-family:'Special Elite',monospace;font-size:17px;color:var(--deep)">
+<label for="mtitle" class="bu" style="font-size:13px;letter-spacing:.12em">TITLE OF YOUR PIECE</label>
+<input id="mtitle" name="title" type="text" autocomplete="off" style="box-sizing:border-box;width:100%;background:var(--paper);border:3px solid var(--deep);padding:12px 14px;font-family:'Special Elite',monospace;font-size:17px;color:var(--deep)">
+<label for="mpoem" class="bu" style="font-size:13px;letter-spacing:.12em">YOUR POEM</label>
+<textarea id="mpoem" name="poem" rows="6" style="box-sizing:border-box;width:100%;background:var(--paper);border:3px solid var(--deep);padding:12px 14px;font-family:'Special Elite',monospace;font-size:17px;line-height:1.5;color:var(--deep);resize:vertical"></textarea>
+<div data-if="err" style="display:contents" hidden><div class="se" style="font-size:14px;color:var(--alert)">Add your name, an email and your poem so we can read it.</div></div>
+<button type="submit" class="bu btn" style="align-self:flex-start;background:var(--yellow);color:var(--deep);border:3px solid var(--deep);padding:12px 24px;font-size:16px;letter-spacing:.06em;box-shadow:4px 4px 0 var(--deep)">SEND IT IN →</button>
+</form>
+</div>
+<div data-if="sent" style="display:contents" hidden>
+<div aria-live="polite" class="drop" style="background:var(--yellow);border:3px solid var(--deep);box-shadow:8px 8px 0 var(--deep);padding:36px 32px;transform:rotate(-1.2deg)">
+<div class="bu" style="font-size:13px;letter-spacing:.14em">RECEIVED</div>
+<div class="an" style="margin:8px 0 10px;font-size:clamp(40px,5vw,60px);line-height:1;text-transform:uppercase">Thank you, <span data-bind="nameShow"></span>.</div>
+<p style="margin:0 0 20px;font-size:19px;line-height:1.55">Your poem is on our desk. <span data-p="mag.submit.after">[WHAT HAPPENS NEXT AND WHEN YOU WILL HEAR BACK]</span></p>
+<button type="button" data-act="mag-again" class="se" style="background:transparent;border:0;padding:8px 0;font-size:16px;text-decoration:underline;color:var(--deep);cursor:pointer">send another piece</button>
+</div>
+</div>
+</div>
+</div>
+</section>
+
+<footer class="torn-t" style="margin-top:-12px;background:var(--deep);color:var(--paper);padding:112px clamp(20px,4vw,56px) 48px">
+<h2 class="an" style="margin:0;max-width:1100px;font-size:clamp(40px,6.4vw,92px);line-height:1;text-transform:uppercase;color:var(--yellow)">Show up for others and we show up for you.</h2>
+<p style="margin:28px 0 0;max-width:640px;font-size:21px;line-height:1.6">Let&rsquo;s build this community together, not just as performers, but also as listeners. See you at our next event! Happy poetry to you!</p>
+<div style="margin-top:44px;display:flex;flex-wrap:wrap;align-items:center;justify-content:space-between;gap:28px 40px">
+<div class="pm" style="font-size:34px;line-height:1.25;transform:rotate(-2deg)"><span style="color:var(--yellow)">Feel it. Like it. Share it.</span><br>Because poetry belongs to everyone.</div>
+<div style="position:relative;display:flex;align-items:center;gap:18px;background:var(--paper);color:var(--deep);padding:22px 22px 16px;transform:rotate(2deg);box-shadow:5px 5px 0 var(--teal)"><span aria-hidden="true" class="tape" style="position:absolute;left:50%;top:-12px;width:70px;height:22px;margin-left:-35px;background:color-mix(in srgb, var(--yellow) 90%, transparent);transform:rotate(-4deg)"></span><span class="an" style="flex:none;width:80px;height:80px;border:3px solid var(--deep);display:flex;align-items:center;justify-content:center;font-size:24px">QR</span><span style="font-size:16px;line-height:1.45"><strong style="font-size:19px">Been to a reading?</strong><br>Scan to share feedback or a testimonial.</span></div>
+</div>
+<div class="se" style="margin-top:48px;display:flex;flex-wrap:wrap;align-items:center;gap:10px 28px;font-size:16px;letter-spacing:.06em;text-transform:uppercase;color:var(--yellow)"><a href="events.html" style="padding:8px 0">Events</a><a href="fundraisers.html" style="padding:8px 0">Fundraisers</a><a href="mag.html" style="padding:8px 0">PoV Mag</a><a href="team.html" style="padding:8px 0">Team</a><a href="magnets.html" style="padding:8px 0">Word magnets</a><a href="perform.html" style="padding:8px 0">Perform at PoV</a><a href="https://www.instagram.com/people_of_the_verse/" style="padding:8px 0">Instagram ↗</a><a href="#" data-href="links.youtube" style="padding:8px 0">YouTube <span data-yt>[link soon]</span></a></div>
+<div style="margin-top:20px;display:flex;align-items:center;gap:12px;color:var(--paper)" class="se"><img src="assets/img/logo.png" alt="" style="width:44px;height:44px;object-fit:cover;border:3px solid #fff">People of the Verse · Bangalore</div>
+</footer>
+
+</div>
+</div>
+<div class="view-m">
+<div id="top-m" style="width:100%;overflow:hidden;color:var(--deep);font-family:'Figtree',sans-serif;background-color:var(--paper);background-image:linear-gradient(color-mix(in srgb, var(--teal) 16%, transparent) 1px,transparent 1px),linear-gradient(90deg,color-mix(in srgb, var(--teal) 16%, transparent) 1px,transparent 1px);background-size:28px 28px">
+<header style="padding:18px 20px 0">
+<div style="display:flex;align-items:center;justify-content:space-between;gap:12px">
+<a href="index.html" style="position:relative;display:flex;align-items:center;gap:12px;transform:rotate(-1.5deg)">
+<span aria-hidden="true" class="tape" style="position:absolute;left:-10px;top:-8px;width:40px;height:16px;background:color-mix(in srgb, var(--yellow) 85%, transparent);transform:rotate(-30deg);z-index:2"></span>
+<img src="assets/img/logo.png" alt="People of the Verse logo" style="width:56px;height:56px;object-fit:cover;border:4px solid #fff;box-shadow:2px 3px 0 color-mix(in srgb, var(--deep) 35%, transparent)">
+<span class="an" style="font-size:22px;letter-spacing:.02em;text-transform:uppercase;line-height:1">People of<br>the Verse</span>
+</a>
+<button type="button" data-act="menu" aria-expanded="false" class="bu btn" style="min-height:48px;min-width:96px;background:var(--deep);color:var(--paper);border:0;border-radius:4px;padding:0 16px;font-size:14px;letter-spacing:.08em;text-shadow:-1px -1px 0 rgba(0,0,0,.35),1px 1px 0 rgba(255,255,255,.2)">MENU</button>
+</div>
+<div data-if="menuOpen" style="display:contents" hidden>
+<nav style="display:flex;flex-direction:column;gap:10px;padding:16px 0 4px">
+<a href="events.html" class="dy">EVENTS</a>
+<a href="fundraisers.html" class="dy">FUNDRAISERS</a>
+<a href="mag.html" class="dy on">POV MAG</a>
+<a href="team.html" class="dy">TEAM</a>
+<a href="magnets.html" class="dy">WORD MAGNETS</a>
+<a href="perform.html" class="bu btn" style="display:block;text-align:center;background:var(--yellow);color:var(--deep);border:3px solid var(--deep);border-radius:4px;padding:12px 18px;font-size:15px;letter-spacing:.08em;box-shadow:4px 4px 0 var(--deep)">PERFORM AT POV</a>
+</nav>
+</div>
+</header>
+<section style="padding:36px 20px 56px"><div class="cv" style="display:inline-block;font-size:26px;line-height:1;color:var(--dark);transform:rotate(-2deg)">stapled by hand</div><h1 class="an" style="margin:8px 0 18px;font-size:92px;line-height:.9;text-transform:uppercase">PoV <span style="display:inline-block;background:var(--yellow);padding:0 .1em;transform:rotate(-2deg);box-shadow:5px 6px 0 var(--deep)">Mag</span></h1><p style="margin:0 0 24px;font-size:19px;line-height:1.5;font-weight:500">Poems and pieces from the people of the verse. Read past issues, or send us your own work.</p><div style="display:flex;flex-direction:column;gap:14px"><a href="#" data-href="mag.latest.link" class="bu btn" style="display:block;text-align:center;background:var(--yellow);color:var(--deep);border:3px solid var(--deep);padding:14px 16px;font-size:14px;letter-spacing:.06em;box-shadow:4px 4px 0 var(--deep)">READ THE LATEST ISSUE →</a><a href="#submit-m" class="bu btn" style="display:block;text-align:center;background:#fff;color:var(--deep);border:3px solid var(--deep);padding:14px 16px;font-size:14px;letter-spacing:.06em;box-shadow:4px 4px 0 var(--deep)">SUBMIT YOUR WORK ↓</a></div><div style="position:relative;width:236px;aspect-ratio:3 / 4;margin:48px auto 0;background:var(--teal);border:4px solid var(--deep);box-shadow:8px 8px 0 var(--deep);transform:rotate(-3deg);padding:18px;display:flex;flex-direction:column;justify-content:space-between"><span aria-hidden="true" style="position:absolute;left:-6px;top:28%;width:22px;height:6px;background:#9aa7a2;border:1px solid var(--deep)"></span><span aria-hidden="true" style="position:absolute;left:-6px;top:68%;width:22px;height:6px;background:#9aa7a2;border:1px solid var(--deep)"></span><div><div class="se" style="font-size:12px;letter-spacing:.1em">ISSUE <span data-p="mag.latest.no">[NO.]</span> · <span data-p="mag.latest.month">[MONTH YEAR]</span></div><div class="ab" style="font-size:62px;line-height:.88;color:var(--paper);text-shadow:3px 3px 0 var(--deep)">PoV<br>Mag</div></div><div class="cv" style="background:#fff;border:2px solid var(--deep);padding:6px 8px;font-size:21px;line-height:1.1;transform:rotate(1.5deg)"><span data-p="mag.latest.cover">[COVER LINE FOR THE LATEST ISSUE]</span></div></div></section>
+<section style="padding:56px 20px 72px;background:var(--mist);border-top:3px solid var(--deep);border-bottom:3px solid var(--deep)"><h2 class="an" style="margin:0 0 10px;font-size:52px;line-height:.95;text-transform:uppercase">Past issues</h2><p style="margin:0 0 36px;font-size:18px;line-height:1.5">Every issue, one stapled cover at a time.</p><div style="display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:36px 18px"><a href="#" data-href="mag.past.0.link" style="display:block;transform:rotate(-2deg)"><div style="position:relative;aspect-ratio:3 / 4;background:var(--teal);border:3px solid var(--deep);box-shadow:5px 5px 0 var(--deep);padding:12px;display:flex;flex-direction:column;justify-content:space-between"><span class="ab" style="font-size:34px;line-height:.9;color:var(--paper);text-shadow:2px 2px 0 var(--deep)">PoV<br>Mag</span><span class="se" style="font-size:12px;background:#fff;border:2px solid var(--deep);padding:3px 6px;color:var(--deep)"><span data-p="mag.past.0.theme">[THEME]</span></span></div><div class="cv" style="margin-top:10px;font-size:24px;line-height:1">Issue <span data-p="mag.past.0.no">[NO.]</span></div><div class="se" style="font-size:12px;color:var(--dark)"><span data-p="mag.past.0.month">[MONTH YEAR]</span> · read ↗</div></a><a href="#" data-href="mag.past.1.link" style="display:block;transform:rotate(1.5deg)"><div style="position:relative;aspect-ratio:3 / 4;background:var(--yellow);border:3px solid var(--deep);box-shadow:5px 5px 0 var(--deep);padding:12px;display:flex;flex-direction:column;justify-content:space-between"><span class="ab" style="font-size:34px;line-height:.9;color:var(--deep)">PoV<br>Mag</span><span class="se" style="font-size:12px;background:#fff;border:2px solid var(--deep);padding:3px 6px;color:var(--deep)"><span data-p="mag.past.1.theme">[THEME]</span></span></div><div class="cv" style="margin-top:10px;font-size:24px;line-height:1">Issue <span data-p="mag.past.1.no">[NO.]</span></div><div class="se" style="font-size:12px;color:var(--dark)"><span data-p="mag.past.1.month">[MONTH YEAR]</span> · read ↗</div></a><a href="#" data-href="mag.past.2.link" style="display:block;transform:rotate(-1deg)"><div style="position:relative;aspect-ratio:3 / 4;background:var(--paper);border:3px solid var(--deep);box-shadow:5px 5px 0 var(--deep);padding:12px;display:flex;flex-direction:column;justify-content:space-between"><span class="ab" style="font-size:34px;line-height:.9;color:var(--teal);-webkit-text-stroke:1.5px var(--deep)">PoV<br>Mag</span><span class="se" style="font-size:12px;background:#fff;border:2px solid var(--deep);padding:3px 6px;color:var(--deep)"><span data-p="mag.past.2.theme">[THEME]</span></span></div><div class="cv" style="margin-top:10px;font-size:24px;line-height:1">Issue <span data-p="mag.past.2.no">[NO.]</span></div><div class="se" style="font-size:12px;color:var(--dark)"><span data-p="mag.past.2.month">[MONTH YEAR]</span> · read ↗</div></a><a href="#" data-href="mag.past.3.link" style="display:block;transform:rotate(2.4deg)"><div style="position:relative;aspect-ratio:3 / 4;background:var(--deep);border:3px solid var(--deep);box-shadow:5px 5px 0 var(--teal);padding:12px;display:flex;flex-direction:column;justify-content:space-between"><span class="ab" style="font-size:34px;line-height:.9;color:var(--yellow)">PoV<br>Mag</span><span class="se" style="font-size:12px;background:#fff;border:2px solid var(--deep);padding:3px 6px;color:var(--deep)"><span data-p="mag.past.3.theme">[THEME]</span></span></div><div class="cv" style="margin-top:10px;font-size:24px;line-height:1">Issue <span data-p="mag.past.3.no">[NO.]</span></div><div class="se" style="font-size:12px;color:var(--dark)"><span data-p="mag.past.3.month">[MONTH YEAR]</span> · read ↗</div></a></div></section>
+<section id="submit-m" style="padding:56px 20px 72px"><div class="cv" style="display:inline-block;font-size:26px;line-height:1;color:var(--dark);transform:rotate(-2deg)">your words, our pages</div><h2 class="an" style="margin:6px 0 16px;font-size:52px;line-height:.95;text-transform:uppercase">Submit your work</h2><p style="margin:0 0 28px;font-size:18px;line-height:1.55">Send us a poem for the next issue of PoV Mag.</p><div style="display:flex;flex-direction:column;align-items:flex-start;gap:16px;margin-bottom:40px"><div class="tape" style="background-color:var(--yellow);background-image:repeating-linear-gradient(90deg,color-mix(in srgb, var(--deep) 10%, transparent) 0 10px,transparent 10px 20px);padding:12px 28px;font-size:19px;font-weight:700;transform:rotate(-1.5deg);">Open for: <span data-p="mag.submit.dates">[SUBMISSION DATES]</span></div><div class="tape" style="background-color:#fff;background-image:repeating-linear-gradient(45deg,color-mix(in srgb, var(--teal) 30%, transparent) 0 10px,transparent 10px 20px);padding:12px 28px;font-size:19px;font-weight:700;transform:rotate(1deg) translateX(20px);">Theme: <span data-p="mag.submit.theme">[THEME FOR THE NEXT ISSUE]</span></div><div class="tape" style="background-color:var(--mist);background-image:radial-gradient(color-mix(in srgb, var(--deep) 25%, transparent) 3px,transparent 3px);background-size:18px 18px;padding:12px 28px;font-size:19px;font-weight:700;transform:rotate(-.8deg) translateX(6px);">Length: <span data-p="mag.submit.limit">[WORD OR LINE LIMIT]</span></div></div><div data-if="formOpen" style="display:contents"><form data-form="mag" style="position:relative;background:#fff;border:2px solid var(--deep);box-shadow:6px 6px 0 var(--deep);padding:34px 18px 22px;display:flex;flex-direction:column;gap:10px"><span aria-hidden="true" class="tape" style="position:absolute;left:50%;top:-14px;width:100px;height:28px;margin-left:-50px;background:color-mix(in srgb, var(--teal) 80%, transparent);transform:rotate(-2deg)"></span><label for="mname-m" class="bu" style="font-size:12px;letter-spacing:.12em">YOUR NAME</label><input id="mname-m" name="name" type="text" autocomplete="off" style="box-sizing:border-box;width:100%;min-height:48px;background:var(--paper);border:3px solid var(--deep);padding:10px 12px;font-family:'Special Elite',monospace;font-size:17px;color:var(--deep)"><label for="memail-m" class="bu" style="font-size:12px;letter-spacing:.12em">EMAIL</label><input id="memail-m" name="email" type="text" autocomplete="off" style="box-sizing:border-box;width:100%;min-height:48px;background:var(--paper);border:3px solid var(--deep);padding:10px 12px;font-family:'Special Elite',monospace;font-size:17px;color:var(--deep)"><label for="mtitle-m" class="bu" style="font-size:12px;letter-spacing:.12em">TITLE OF YOUR PIECE</label><input id="mtitle-m" name="title" type="text" autocomplete="off" style="box-sizing:border-box;width:100%;min-height:48px;background:var(--paper);border:3px solid var(--deep);padding:10px 12px;font-family:'Special Elite',monospace;font-size:17px;color:var(--deep)"><label for="mpoem-m" class="bu" style="font-size:12px;letter-spacing:.12em">YOUR POEM</label><textarea id="mpoem-m" name="poem" rows="7" style="box-sizing:border-box;width:100%;background:var(--paper);border:3px solid var(--deep);padding:10px 12px;font-family:'Special Elite',monospace;font-size:17px;line-height:1.5;color:var(--deep);resize:vertical"></textarea><div data-if="err" style="display:contents" hidden><div class="se" style="font-size:14px;color:var(--alert)">Add your name, an email and your poem so we can read it.</div></div><button type="submit" class="bu btn" style="min-height:52px;background:var(--yellow);color:var(--deep);border:3px solid var(--deep);padding:12px 24px;font-size:15px;letter-spacing:.06em;box-shadow:4px 4px 0 var(--deep)">SEND IT IN →</button></form></div><div data-if="sent" style="display:contents" hidden><div aria-live="polite" class="drop" style="background:var(--yellow);border:3px solid var(--deep);box-shadow:6px 6px 0 var(--deep);padding:28px 20px;transform:rotate(-1.2deg)"><div class="bu" style="font-size:12px;letter-spacing:.14em">RECEIVED</div><div class="an" style="margin:8px 0 10px;font-size:40px;line-height:1;text-transform:uppercase;overflow-wrap:anywhere">Thank you, <span data-bind="nameShow"></span>.</div><p style="margin:0 0 16px;font-size:17px;line-height:1.5">Your poem is on our desk. <span data-p="mag.submit.after">[WHAT HAPPENS NEXT AND WHEN YOU WILL HEAR BACK]</span></p><button type="button" data-act="mag-again" class="se" style="min-height:44px;background:transparent;border:0;padding:8px 0;font-size:15px;text-decoration:underline;color:var(--deep);cursor:pointer">send another piece</button></div></div></section>
+<footer class="torn-t" style="margin-top:-10px;background:var(--deep);color:var(--paper);padding:80px 20px 36px">
+<h2 class="an" style="margin:0;font-size:46px;line-height:1;text-transform:uppercase;color:var(--yellow)">Show up for others and we show up for you.</h2>
+<p style="margin:20px 0 0;font-size:18px;line-height:1.6">Let&rsquo;s build this community together, not just as performers, but also as listeners. See you at our next event! Happy poetry to you!</p>
+<div class="pm" style="margin-top:32px;font-size:28px;line-height:1.25;transform:rotate(-2deg)"><span style="color:var(--yellow)">Feel it. Like it. Share it.</span><br>Because poetry belongs to everyone.</div>
+<div style="position:relative;margin-top:36px;display:flex;align-items:center;gap:14px;background:var(--paper);color:var(--deep);padding:20px 16px 14px;transform:rotate(1.5deg);box-shadow:4px 4px 0 var(--teal)"><span aria-hidden="true" class="tape" style="position:absolute;left:50%;top:-10px;width:60px;height:20px;margin-left:-30px;background:color-mix(in srgb, var(--yellow) 90%, transparent);transform:rotate(-4deg)"></span><span class="an" style="flex:none;width:68px;height:68px;border:3px solid var(--deep);display:flex;align-items:center;justify-content:center;font-size:20px">QR</span><span style="font-size:15px;line-height:1.4"><strong style="font-size:17px">Been to a reading?</strong><br>Scan to share feedback or a testimonial.</span></div>
+<div class="se" style="margin-top:36px;display:flex;flex-wrap:wrap;gap:0 22px;font-size:14px;letter-spacing:.06em;text-transform:uppercase;color:var(--yellow)"><a href="events.html" style="padding:12px 0">Events</a><a href="fundraisers.html" style="padding:12px 0">Fundraisers</a><a href="mag.html" style="padding:12px 0">PoV Mag</a><a href="team.html" style="padding:12px 0">Team</a><a href="magnets.html" style="padding:12px 0">Word magnets</a><a href="perform.html" style="padding:12px 0">Perform at PoV</a><a href="https://www.instagram.com/people_of_the_verse/" style="padding:12px 0">Instagram ↗</a><a href="#" data-href="links.youtube" style="padding:12px 0">YouTube <span data-yt>[link soon]</span></a></div>
+<div class="se" style="margin-top:16px;display:flex;align-items:center;gap:10px;font-size:14px"><img src="assets/img/logo.png" alt="" style="width:40px;height:40px;object-fit:cover;border:3px solid #fff">People of the Verse · Bangalore</div>
+</footer>
+</div>
+</div>
+<script src="assets/js/content.js"></script>
+<script src="assets/js/site.js"></script>
+</body>
+</html>

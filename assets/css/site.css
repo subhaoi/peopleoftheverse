@@ -1,0 +1,56 @@
+/* ==========================================================
+   People of the Verse: shared styles
+   The page layouts themselves come from the design (the <style>
+   block in each page). This file only holds what the design
+   canvas did not need: view switching, theme variables and the
+   Playground panel.
+   ========================================================== */
+:root {
+  --teal: #289F88;
+  --yellow: #FEDD59;
+  --deep: #0E4A3C;
+  --paper: #FFF9E6;
+  --mist: #D3EDE3;
+  --dark: #1E7C69;
+  --alert: #8A2B0E;
+}
+html { scroll-behavior: smooth; -webkit-text-size-adjust: 100%; }
+body { margin: 0; background: var(--paper); color: var(--deep); }
+[hidden] { display: none !important; }
+template { display: none; }
+
+/* Desktop and mobile designs live in the same page; one is shown. */
+.view-m { display: none; }
+@media (max-width: 899.98px) {
+  .view-d { display: none; }
+  .view-m { display: block; max-width: 640px; margin: 0 auto; }
+}
+
+/* Playground toggles */
+body.no-grid .view-d > div:first-child,
+body.no-grid .view-m > div:first-child { background-image: none !important; }
+body.still .ticker { animation: none !important; }
+
+.sr-only { position: absolute; width: 1px; height: 1px; overflow: hidden; clip: rect(0 0 0 0); white-space: nowrap; }
+
+/* ---------- Playground panel ---------- */
+.pg-btn { position: fixed; left: 16px; bottom: 16px; z-index: 9000; background: var(--deep); color: var(--yellow); border: 3px solid var(--yellow); border-radius: 999px; padding: 10px 18px; min-height: 48px; font-family: 'Bungee', sans-serif; font-size: 13px; letter-spacing: .06em; cursor: pointer; box-shadow: 4px 4px 0 rgba(0,0,0,.35); }
+.pg { position: fixed; left: 16px; bottom: 76px; z-index: 9000; width: min(340px, calc(100vw - 32px)); max-height: calc(100vh - 100px); overflow: auto; background: var(--paper); color: var(--deep); border: 3px solid var(--deep); border-radius: 14px; box-shadow: 8px 8px 0 var(--deep); padding: 18px; display: none; font: 15px/1.4 'Figtree', sans-serif; }
+.pg.open { display: block; }
+.pg h2 { margin: 0; font-family: 'Anton', sans-serif; font-weight: 400; font-size: 26px; text-transform: uppercase; }
+.pg h3 { margin: 16px 0 8px; font-family: 'Bungee', sans-serif; font-weight: 400; font-size: 12px; letter-spacing: .12em; color: var(--dark); }
+.pg .seg { display: flex; border: 3px solid var(--deep); border-radius: 8px; overflow: hidden; }
+.pg .seg button { flex: 1; min-height: 44px; background: #fff; color: var(--deep); border: 0; border-right: 2px solid var(--deep); padding: 6px; font: 700 15px 'Figtree', sans-serif; cursor: pointer; }
+.pg .seg button:last-child { border-right: 0; }
+.pg .seg button.on { background: var(--yellow); }
+.pg .cols { display: grid; grid-template-columns: 1fr 1fr; gap: 8px 12px; }
+.pg .cols label { display: flex; align-items: center; gap: 8px; font-weight: 600; }
+.pg input[type=color] { width: 44px; height: 36px; padding: 0; border: 2px solid var(--deep); background: none; cursor: pointer; }
+.pg .chk { display: flex; align-items: center; gap: 10px; min-height: 36px; font-weight: 600; }
+.pg .chk input { width: 20px; height: 20px; accent-color: var(--teal); }
+.pg .mini { display: inline-block; min-height: 40px; background: #fff; color: var(--deep); border: 2px solid var(--deep); border-radius: 8px; padding: 6px 12px; font: 700 15px 'Figtree', sans-serif; cursor: pointer; margin: 4px 6px 0 0; }
+.pg .mini:hover { background: var(--yellow); }
+.pg .drawn { margin-top: 8px; background: var(--yellow); border: 2px solid var(--deep); border-radius: 8px; padding: 8px 12px; font-weight: 700; }
+.pg small { display: block; margin-top: 6px; opacity: .8; }
+.pg-btn:focus-visible, .pg button:focus-visible, .pg input:focus-visible { outline: 3px solid var(--teal); outline-offset: 2px; }
+@media (max-width: 899.98px) { .pg-btn { left: 10px; bottom: 10px; } .pg { left: 10px; bottom: 70px; } }
