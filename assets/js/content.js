@@ -13,6 +13,66 @@
 (function () {
   const rep = (n, f) => Array.from({ length: n }, (_, i) => f(i));
 
+  /* Questions on the FAQ page. Answers that need a real fact come from `visit`. */
+  const faqPage = (v) => [
+    { q: 'Is it really free?', a: 'Yes. Entry to every reading is free. Fundraiser shows invite donations for the cause, and giving is always optional.' },
+    { q: 'Do I need to RSVP?', a: v.rsvp },
+    { q: 'Can I come on my own?', a: 'Yes, you are welcome to come alone. The room is built around listening to each other.' },
+    { q: 'Do I have to perform to come along?', a: 'No. Come to listen, cheer and be part of the room.' },
+    { q: 'What kind of poems will I hear?', a: 'A mix of voices and styles. Each month we pick the line-up for quality of writing, authenticity, new and refreshing perspectives, respect for everyone, and an insatiable love for poetry.' },
+    { q: 'Can I take photos or record?', a: v.photos },
+    { q: 'Can I read my own poem?', a: 'Yes, through a Spot Slot. Put a slip in before the show, and two names are drawn from the audience box at the reading. Full details are on the Perform page.' },
+    { q: 'What if something feels wrong?', a: 'Tell a host and we will help. Our code of conduct is on the About page. ' + v.help }
+  ];
+  const liveVisit = {
+    doors: '[WHEN DOORS OPEN AND WHERE TO CHECK IN]',
+    after: '[WHAT HAPPENS AFTER THE READING]',
+    time: '[START AND END TIME OF A READING]',
+    getting: '[HOW TO GET TO THE VENUE BY METRO OR BUS AND WHERE TO PARK]',
+    language: '[LANGUAGES USED AT READINGS]',
+    seating: '[SEATING AT THE VENUE]',
+    kids: '[WHETHER CHILDREN ARE WELCOME AND ANY AGE NOTE]',
+    access: '[STEP FREE ENTRY, LIFTS, RESTROOMS AND ACCESSIBLE SEATING]',
+    food: '[FOOD AND DRINK AT THE VENUE]',
+    rsvp: '[WHETHER YOU NEED TO RSVP]',
+    photos: '[PHOTO AND RECORDING POLICY]',
+    help: '[WHO TO TELL AT THE EVENT IF SOMETHING FEELS WRONG]'
+  };
+  const sampleVisit = {
+    doors: 'Doors open at 5:30 PM. Say hello at the entrance and find a seat.',
+    after: 'Sample text: stay for a chat with the poets over tea.',
+    time: '6:00 PM to about 8:30 PM',
+    getting: 'Sample text: 5 minutes from the nearest metro station. Street parking nearby.',
+    language: 'Mostly English, with the occasional line in another language.',
+    seating: 'Sample text: chairs at the front, floor cushions at the back.',
+    kids: 'Sample text: kids over 12 are welcome with an adult.',
+    access: 'Sample text: step-free entry, a lift and an accessible restroom.',
+    food: 'Sample text: tea and snacks are available at the venue.',
+    rsvp: 'Sample text: no RSVP needed, just walk in.',
+    photos: 'Sample text: please ask a host before recording a poet.',
+    help: 'Sample text: find a host in a PoV tee, or message us on Instagram.'
+  };
+  const liveAbout = {
+    since: '[YEAR STARTED]',
+    readings: '[READINGS]',
+    poets: '[POETS]',
+    why: '[HOW AND WHY POV STARTED]',
+    who: '[WHO STARTED IT AND WHEN]',
+    moment: '[A MOMENT OR READING THAT SHAPED THE COLLECTIVE]',
+    feel: '[WHAT THE ROOM FEELS LIKE]',
+    crowd: '[HOW MANY PEOPLE USUALLY COME]'
+  };
+  const sampleAbout = {
+    since: '2024',
+    readings: '30',
+    poets: '250',
+    why: 'Sample text: it began with a handful of friends who wanted a room where poetry could be heard properly.',
+    who: 'Sample text: started by a few poets and listeners in Bangalore.',
+    moment: 'Sample text: one night, a first-time reader got a standing ovation, and we knew what the room was for.',
+    feel: 'Sample text: warm, hushed during a poem, loud when it ends.',
+    crowd: 'Sample text: around 60 people on a good night.'
+  };
+
   window.POV_CONTENT = {
 
     config: {
@@ -22,6 +82,9 @@
 
     /* ---------------- LIVE (fill these in) ---------------- */
     live: {
+      visit: liveVisit,
+      about: liveAbout,
+      faqPage: faqPage(liveVisit),
       links: {
         instagram: 'https://www.instagram.com/people_of_the_verse/',
         youtube: '#',                 // add when the channel exists
@@ -82,6 +145,9 @@
 
     /* ---------------- SAMPLE (clearly fake demo data) ---------------- */
     sample: {
+      visit: sampleVisit,
+      about: sampleAbout,
+      faqPage: faqPage(sampleVisit),
       links: {
         instagram: 'https://www.instagram.com/people_of_the_verse/',
         youtube: '#',

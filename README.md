@@ -14,6 +14,14 @@ design shows at 900px and wider, the mobile design below that.
 All links are relative, so it works from that sub-path. To preview locally:
 `python3 -m http.server` in this folder, then open http://localhost:8000.
 
+## Pages
+
+Home, Events, Fundraisers, PoV Mag, Team, Perform, Magnets, **About** (our story,
+community-first idea, code of conduct, what the room is like) and **FAQ**
+(first visit, getting there, language, seating, kids, accessibility). About is in the
+nav; FAQ is linked from the footer and from About. The Home page is a short signpost:
+details live on the inner pages, and the slip form is on Events and Perform.
+
 ## What the team can play with
 
 Press **PLAYGROUND** (bottom left) on any page:
@@ -21,7 +29,7 @@ Press **PLAYGROUND** (bottom left) on any page:
 - **Content**: switch between the placeholders (what the design shows today) and clearly fake sample content.
 - **Colours**: re-theme the whole site live (teal, yellow, deep, paper, mist).
 - **Look**: turn the graph paper off, pause the ticker.
-- **Audience box**: slips people put in on the Home, Events and Perform pages; *Draw two slips* picks two.
+- **Audience box**: slips people put in on the Events and Perform pages; *Draw two slips* picks two.
 - **Export JSON / Reset**: download everything entered in the demo, or clear it.
 
 Slips, notes, PoV Mag submissions and wall poems are stored in the visitor's own
@@ -30,7 +38,7 @@ service (a form tool, Google Forms or a small backend).
 
 ## Filling in the real content
 
-All facts live in `assets/js/content.js` (`live` section). Replace the `[PLACEHOLDERS]`,
+All facts live in `assets/js/content.js` (`live` section). The About and FAQ pages read the `about`, `visit` and `faqPage` blocks. Replace the `[PLACEHOLDERS]`,
 add photos in `assets/img/` and point to them (for example `photo: 'assets/img/team-01.jpg'`).
 Empty photo fields keep the placeholder tile.
 

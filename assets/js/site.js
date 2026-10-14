@@ -141,7 +141,8 @@
   };
   var openFaq = 0;
   var FAQS = function () {
-    return C.faq.map(function (f, i) {
+    var src = page === 'faq' ? D().faqPage : C.faq;
+    return src.map(function (f, i) {
       var open = i === openFaq;
       return { q: f.q, a: f.a, open: open, expanded: open ? 'true' : 'false', mark: open ? '−' : '+', i: i };
     });
