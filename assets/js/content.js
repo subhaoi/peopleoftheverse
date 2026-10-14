@@ -39,11 +39,11 @@
     help: '[WHO TO TELL AT THE EVENT IF SOMETHING FEELS WRONG]'
   };
   const sampleVisit = {
-    doors: 'Doors open at 5:30 PM. Say hello at the entrance and find a seat.',
+    doors: 'Doors open at 4:00 PM. Say hello at the entrance and find a seat.',
     after: 'Sample text: stay for a chat with the poets over tea.',
-    time: '6:00 PM to about 8:30 PM',
+    time: '4:30 PM to about 7:00 PM',
     getting: 'Sample text: 5 minutes from the nearest metro station. Street parking nearby.',
-    language: 'Mostly English, with the occasional line in another language.',
+    language: 'Mostly English, with the occasional word or line in another language.',
     seating: 'Sample text: chairs at the front, floor cushions at the back.',
     kids: 'Sample text: kids over 12 are welcome with an adult.',
     access: 'Sample text: step-free entry, a lift and an accessible restroom.',
@@ -63,14 +63,14 @@
     crowd: '[HOW MANY PEOPLE USUALLY COME]'
   };
   const sampleAbout = {
-    since: '2024',
-    readings: '30',
-    poets: '250',
+    since: '2025',
+    readings: '10',
+    poets: '64',
     why: 'Sample text: it began with a handful of friends who wanted a room where poetry could be heard properly.',
     who: 'Sample text: started by a few poets and listeners in Bangalore.',
     moment: 'Sample text: one night, a first-time reader got a standing ovation, and we knew what the room was for.',
     feel: 'Sample text: warm, hushed during a poem, loud when it ends.',
-    crowd: 'Sample text: around 60 people on a good night.'
+    crowd: 'around 50 people on a good evening.'
   };
 
   window.POV_CONTENT = {
@@ -87,9 +87,9 @@
       faqPage: faqPage(liveVisit),
       links: {
         instagram: 'https://www.instagram.com/people_of_the_verse/',
-        youtube: '#',                 // add when the channel exists
+        youtube: https://www.youtube.com/@people_of_the_verse',                 // add when the channel exists
         feedback: '#',                // where the footer QR code should point
-        email: '[EMAIL ADDRESS]'
+        email: 'peopleoftheverses@gmail.com'
       },
       next: {
         date: '[DAY, DATE]',
